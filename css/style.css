@@ -1,0 +1,1823 @@
+/* font */
+@font-face {
+    font-family: "MaruBuri";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriSemiBold";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriBold";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriLight";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriExtraLight";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.ttf)
+            format("truetype");
+}
+/* body */
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+/* ==================================================================== */
+
+/* ====================== 모바일 버전 ============================ */
+@media (max-width: 760px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #fff;
+    }
+    header h1 {
+        width: 200px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo,
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        display: none;
+    }
+    .main_menu {
+        display: none;
+    }
+    .reserv {
+        text-align: right;
+        display: none;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #fff !important;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    .side_menu {
+        position: relative;
+        z-index: 5;
+    }
+    .ham_menu {
+        width: 400px;
+        height: 1000px;
+        background-color: #a0c4d7;
+        position: absolute;
+        right: -500px;
+        top: -40px;
+        transition: 0.5s;
+    }
+    /* 사이드메뉴 toggle on */
+    .side_on {
+        right: -5px;
+    }
+    .go_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ham_menu .go_wrap > a {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .wh_on {
+        background-color: #fff !important;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: block;
+    }
+    /* 햄버거 X버튼 */
+    .bars {
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+        margin-right: 30px;
+    }
+    .bars a {
+        width: 100%;
+        height: 100%;
+    }
+    .bar {
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .up {
+        top: 0px;
+        left: 0px;
+    }
+    .midd {
+        width: 20px;
+        top: 50%;
+        right: 0px;
+        transform: translate(0%, -50%);
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .down {
+        bottom: 0px;
+        left: 0px;
+    }
+    /* act  x로 바뀌는 class */
+    .on {
+        transform: translateY(11.5px) rotate(-45deg);
+    }
+    .on-d {
+        transform: translateY(-11.5px) rotate(45deg);
+    }
+    .on-m {
+        opacity: 0;
+    }
+    /* 스크롤시 헤더색 바뀌는 class */
+    .colo_on {
+        background-color: #fff;
+    }
+    .colo_on a {
+        color: #222;
+    }
+    .colo_on .reserv a {
+        border-color: #222;
+    }
+    /* visual */
+    #visual {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .v_txt {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #fff;
+        position: absolute;
+        right: 60px;
+        bottom: 0px;
+        display: none;
+    }
+    /* container */
+    #container {
+        width: 100vw;
+    }
+    section {
+        width: 100vw;
+        height: 1000px;
+        position: relative;
+    }
+    .page01 {
+        height: 1700px;
+    }
+    .p1_bgbox {
+        width: 100vw;
+        height: 900px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    .resort_park {
+        width: 100%;
+        font-family: "MaruBuri";
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .resort_park li:nth-child(1) img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .resort_park li:nth-child(2) img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .resort_park h2 {
+        font-size: 60px;
+        color: #6992a8;
+        font-weight: lighter;
+    }
+    .resort_park li:nth-child(1) h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .resort_park li:nth-child(2) {
+        text-align: center;
+    }
+    .resort_park li:nth-child(2) h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .resort_park p {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .resort_park a {
+        position: relative;
+    }
+
+    /* gsap */
+    .page01 .resort_park .p1_titl1 {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .page01 .resort_park .p1_titl2 {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .resort_park .resort_img1 {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    .resort_park .resort_img2 {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    .p1_txt1 {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .page01 .p1_txt2 {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .resort_more {
+        width: 350px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .resort_more span {
+        display: inline-block;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        padding: 10px 40px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* 리조트 그림 호버시 더보기*/
+    .opci_on {
+        opacity: 1;
+    }
+    /* page02 */
+    .page02 {
+        width: 100%;
+        height: 1500px;
+    }
+    .l_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        display: none;
+    }
+    .p2_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #405f6f;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .room {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        gap: 30px;
+        position: absolute;
+        top: 30%;
+        left: 470px;
+    }
+    .room li {
+        width: 100%;
+        height: 100%;
+    }
+    .room img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .p2_txt {
+        font-family: "MaruBuri";
+        text-align: center;
+        margin: 50px 0px;
+    }
+    .p2_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    /* page03 */
+    .page03 {
+        margin-top: 200px;
+    }
+    .r_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        display: none;
+    }
+    .p3_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 60px;
+        color: #6992a8;
+        text-align: center;
+    }
+    .p3_txt {
+        text-align: center;
+        font-family: "MaruBuri";
+        margin: 50px 0px;
+    }
+    .p3_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .page03 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    /* page04 */
+    .page04 {
+        height: 1400px;
+    }
+    .l_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        display: none;
+    }
+    .p4_txtwrap {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .p4_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #405f6f;
+    }
+    .p4_txt {
+        font-family: "MaruBuri";
+        margin-top: 50px;
+    }
+    .p4_txt p {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .p4_txt .more_box {
+        margin: 0px;
+    }
+    .p4_imag {
+        width: 80%;
+        margin: 150px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 150px auto;
+        justify-content: center;
+    }
+    .p4_imag img {
+        width: 100%;
+        object-fit: cover;
+    }
+    /* banner */
+    .reservation {
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 50px;
+        margin-bottom: 100px;
+    }
+    .reservation a {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .r_bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/hotel06.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .r_txt {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0px 30px;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+    .r_txt p {
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-family: "MaruBuri";
+        font-size: 16px;
+    }
+    .reserv_go {
+        font-family: "Noto Serif Display", serif;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .reserv_go span:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 50px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .f_logo {
+        width: 150px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}
+
+/* ====================== 태블릿 버전 ============================ */
+
+@media (min-width: 760px) and (max-width: 1500px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #fff;
+    }
+    header h1 {
+        width: 300px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo,
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        display: none;
+    }
+    .main_menu {
+        display: none;
+    }
+    .reserv {
+        text-align: right;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #fff !important;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    .side_menu {
+        position: relative;
+        z-index: 5;
+    }
+    .ham_menu {
+        width: 400px;
+        height: 1000px;
+        background-color: #a0c4d7;
+        position: absolute;
+        right: -500px;
+        top: -40px;
+        transition: 0.5s;
+    }
+    /* 사이드메뉴 toggle on */
+    .side_on {
+        right: -5px;
+    }
+    .go_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ham_menu .go_wrap > a {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .wh_on {
+        background-color: #fff !important;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: block;
+    }
+    /* 햄버거 X버튼 */
+    .bars {
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+        margin-right: 30px;
+    }
+    .bars a {
+        width: 100%;
+        height: 100%;
+    }
+    .bar {
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .up {
+        top: 0px;
+        left: 0px;
+    }
+    .midd {
+        width: 20px;
+        top: 50%;
+        right: 0px;
+        transform: translate(0%, -50%);
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .down {
+        bottom: 0px;
+        left: 0px;
+    }
+    /* act  x로 바뀌는 class */
+    .on {
+        transform: translateY(11.5px) rotate(-45deg);
+    }
+    .on-d {
+        transform: translateY(-11.5px) rotate(45deg);
+    }
+    .on-m {
+        opacity: 0;
+    }
+    /* 햄버거 호버시 색 바뀜 */
+    .bar_on {
+        background-color: #a0c4d7;
+    }
+    /* 스크롤시 헤더색 바뀌는 class */
+    .colo_on {
+        background-color: #fff;
+    }
+    .colo_on a {
+        color: #222;
+    }
+    .colo_on .reserv a {
+        border-color: #222;
+    }
+    /* visual */
+    #visual {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .v_txt {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #fff;
+        position: absolute;
+        right: 60px;
+        bottom: 0px;
+    }
+    /* container */
+    #container {
+        width: 100vw;
+    }
+    section {
+        width: 100vw;
+        height: 1000px;
+        position: relative;
+    }
+    .p1_bgbox {
+        width: 100vw;
+        height: 560px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    .resort_park {
+        width: 100%;
+        height: 100%;
+        font-family: "MaruBuri";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .resort_park li:nth-child(1) img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .resort_park li:nth-child(2) img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .resort_park h2 {
+        font-size: 60px;
+        color: #6992a8;
+        font-weight: lighter;
+    }
+    .resort_park li:nth-child(1) h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .resort_park li:nth-child(2) {
+        text-align: center;
+    }
+    .resort_park li:nth-child(2) h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .resort_park p {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .resort_park a {
+        position: relative;
+    }
+
+    /* gsap */
+    .page01 .resort_park .p1_titl1 {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .page01 .resort_park .p1_titl2 {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .resort_park .resort_img1 {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    .resort_park .resort_img2 {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    .p1_txt1 {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .page01 .p1_txt2 {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .resort_more {
+        width: 350px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .resort_more span {
+        display: inline-block;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        padding: 10px 40px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* 리조트 그림 호버시 더보기*/
+    .opci_on {
+        opacity: 1;
+    }
+    /* page02 */
+    .page02 {
+        width: 100%;
+    }
+    .l_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    .p2_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 150px;
+        color: #405f6f;
+        position: absolute;
+        top: 220px;
+        left: 160px;
+        z-index: 2;
+    }
+    .room {
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        top: 50%;
+        left: 800px;
+        transform: translateY(-50%);
+    }
+    .room li {
+        width: 300px;
+        height: 200px;
+    }
+    .room img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .p2_txt {
+        font-family: "MaruBuri";
+        position: absolute;
+        top: 50%;
+        left: 200px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .p2_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    /* page03 */
+    .r_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+    .p3_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #6992a8;
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        z-index: 2;
+    }
+    .p3_txt {
+        text-align: center;
+        font-family: "MaruBuri";
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .p3_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .page03 img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: -150px;
+        transform: translateY(-50%);
+    }
+    /* page04 */
+    .l_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    .p4_txtwrap {
+        position: absolute;
+        top: 120px;
+        right: 50px;
+        z-index: 2;
+    }
+    .p4_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #405f6f;
+    }
+    .p4_txt {
+        font-family: "MaruBuri";
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        margin-top: 50px;
+    }
+    .p4_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .p4_txt .more_box {
+        margin: 0px;
+    }
+    .p4_imag {
+        display: flex;
+        align-items: end;
+        gap: 50px;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        z-index: 2;
+    }
+    .p4_imag img {
+        width: 100%;
+        object-fit: cover;
+    }
+    /* banner */
+    .reservation {
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 50px;
+    }
+    .reservation a {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .r_bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/hotel06.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .r_txt {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0px 30px;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+    .r_txt p {
+        line-height: 32px;
+        letter-spacing: 1px;
+        font-family: "MaruBuri";
+        font-size: 20px;
+    }
+    .reserv_go {
+        font-family: "Noto Serif Display", serif;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .reserv_go span:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 50px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 200px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .f_logo {
+        width: 200px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}
+
+/* ========================== pc버전 ============================= */
+
+@media (min-width: 1500px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #fff;
+    }
+    header h1 {
+        width: 300px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo,
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        display: none;
+    }
+    .main_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .reserv {
+        text-align: right;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: none;
+    }
+    /* 스크롤시 헤더색 바뀌는 class */
+    .colo_on {
+        background-color: #fff;
+    }
+    .colo_on a {
+        color: #222;
+    }
+    .colo_on .reserv a {
+        border-color: #222;
+    }
+    /* visual */
+    #visual {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .v_txt {
+        font-family: "Noto Serif Display", serif;
+        font-size: 250px;
+        color: #fff;
+        position: absolute;
+        right: 60px;
+        bottom: -30px;
+    }
+    /* container */
+    #container {
+        width: 100vw;
+    }
+    section {
+        width: 100vw;
+        height: 1000px;
+        position: relative;
+    }
+    .p1_bgbox {
+        width: 100vw;
+        height: 560px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    .resort_park {
+        width: 100%;
+        height: 100%;
+        font-family: "MaruBuri";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .resort_park li:nth-child(1) img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .resort_park li:nth-child(2) img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .resort_park h2 {
+        font-size: 80px;
+        color: #6992a8;
+        font-weight: lighter;
+    }
+    .resort_park li:nth-child(1) h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .resort_park li:nth-child(2) {
+        text-align: center;
+    }
+    .resort_park li:nth-child(2) h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .resort_park p {
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    .resort_park a {
+        position: relative;
+    }
+    /* gsap */
+    .page01 .resort_park .p1_titl1 {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .page01 .resort_park .p1_titl2 {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .resort_park .resort_img1 {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    .resort_park .resort_img2 {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    .p1_txt1 {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .page01 .p1_txt2 {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .resort_more {
+        width: 350px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .resort_more span {
+        display: inline-block;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        padding: 10px 40px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* 리조트 그림 호버시 더보기*/
+    .opci_on {
+        opacity: 1;
+    }
+    /* page02 */
+    .page02 {
+        overflow: hidden;
+    }
+    .l_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    .p2_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 150px;
+        color: #405f6f;
+        position: absolute;
+        top: 220px;
+        left: 160px;
+        z-index: 2;
+        /* transform: translateY(200px); */
+        /* opacity: 0; */
+    }
+    .room {
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        top: 50%;
+        left: 1500px;
+        transform: translateY(-50%);
+    }
+    .room li {
+        width: 440px;
+        height: 300px;
+    }
+    .room img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .p2_txt {
+        font-family: "MaruBuri";
+        position: absolute;
+        top: 50%;
+        left: 200px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .p2_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    /* page03 */
+    .r_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+    .p3_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 200px;
+        color: #6992a8;
+        position: absolute;
+        top: 60px;
+        right: 150px;
+        z-index: 2;
+    }
+    .p3_txt {
+        text-align: center;
+        font-family: "MaruBuri";
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .p3_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .page03 img {
+        width: 1600px;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    /* page04 */
+    .l_bgbox {
+        width: 400px;
+        height: 1000px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    .p4_txtwrap {
+        position: absolute;
+        top: 120px;
+        right: 150px;
+        z-index: 2;
+    }
+    .p4_title {
+        font-family: "Noto Serif Display", serif;
+        font-size: 100px;
+        color: #405f6f;
+    }
+    .p4_txt {
+        font-family: "MaruBuri";
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        margin-top: 50px;
+    }
+    .p4_txt p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .p4_txt .more_box {
+        margin: 0px;
+    }
+    .p4_imag {
+        display: flex;
+        align-items: end;
+        gap: 50px;
+        position: absolute;
+        bottom: 50px;
+        left: 150px;
+        z-index: 2;
+    }
+    /* banner */
+    .reservation {
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 50px;
+    }
+    .reservation a {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .r_bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/hotel06.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .r_txt {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0px 50px;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+    .r_txt p {
+        line-height: 60px;
+        letter-spacing: 1px;
+        font-family: "MaruBuri";
+        font-size: 35px;
+    }
+    .reserv_go {
+        font-family: "Noto Serif Display", serif;
+        font-size: 50px;
+        font-weight: 900;
+    }
+    .reserv_go span:nth-child(2) {
+        margin-left: 25px;
+    }
+
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 150px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 200px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 40px;
+    }
+    .f_logo {
+        width: 200px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}
