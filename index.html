@@ -7,11 +7,12 @@
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/jquery.transform2d.js"></script>
+        <script src="js/splitting.min.js"></script>
         <!-- gsap -->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <!-- 폰트어썸 -->
         <link
             rel="stylesheet"
@@ -49,7 +50,7 @@
                 <li>
                     <ul class="main_menu">
                         <li>
-                            <a href="#"
+                            <a href="resort_park.html"
                                 >Resort & Park
                                 <div class="under_bar"></div>
                             </a>
@@ -91,7 +92,7 @@
                         </div>
                         <div class="ham_menu">
                             <div class="go_wrap">
-                                <a href="#"
+                                <a href="resort_park.html"
                                     >Resort & Park
                                     <div class="under_bar"></div> </a
                                 ><br />
@@ -127,7 +128,7 @@
             <div class="p1_bgbox"></div>
             <ul class="resort_park">
                 <li>
-                    <a class="resort_img1" href="#">
+                    <a class="resort_img1" href="resort_park.html">
                         <img
                             src="img/hotel05_900.jpg"
                             alt="거제 르 씨엘 노을지는 수영장"
@@ -142,7 +143,7 @@
                 <li>
                     <p class="p1_txt2">유럽 대저택의 고풍미가 느껴지는</p>
                     <h2 class="p1_titl2">설악 쏘라노</h2>
-                    <a class="resort_img2" href="#">
+                    <a class="resort_img2" href="resort_park.html">
                         <img src="img/hotel01_900.jpg" alt="설악 쏘라노 로비" />
                         <div class="resort_more">
                             <span>더 보기</span>
@@ -183,7 +184,11 @@
                     <div class="circle"></div>
                 </a>
             </div>
-            <img src="img/dog2_2000.jpg" alt="강아지를 안고 미소짓는 사람" />
+            <img
+                class="p3_img"
+                src="img/dog2_2000.jpg"
+                alt="강아지를 안고 미소짓는 사람"
+            />
         </section>
         <section class="page04">
             <div class="l_bgbox"></div>
@@ -202,13 +207,24 @@
             </div>
             <ul class="p4_imag">
                 <li>
-                    <img src="img/bag01.jpg" alt="캐리어를 끌고가는 사람" />
+                    <img
+                        class="p4_img1"
+                        src="img/bag01.jpg"
+                        alt="캐리어를 끌고가는 사람"
+                    />
                 </li>
-                <li><img src="img/promo02.jpg" alt="선물을 받는 소녀" /></li>
+                <li>
+                    <img
+                        class="p4_img2"
+                        src="img/promo02.jpg"
+                        alt="선물을 받는 소녀"
+                    />
+                </li>
             </ul>
         </section>
         <div class="reservation">
             <a href="#">
+                <div class="imgBox"></div>
                 <div class="r_bg"></div>
                 <div class="r_txt">
                     <p>
@@ -286,7 +302,7 @@
         <script>
             gsap.registerPlugin(ScrollTrigger);
         </script>
-        <script src="js/custom.js"></script>
-        <script src="js/custom_gsap.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/index_gsap.js"></script>
     </body>
 </html>
