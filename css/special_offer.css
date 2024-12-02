@@ -1,0 +1,465 @@
+/* font */
+@font-face {
+    font-family: "MaruBuri";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriSemiBold";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriBold";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriLight";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriExtraLight";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.ttf)
+            format("truetype");
+}
+/* body */
+body {
+    position: relative;
+    overflow-x: hidden;
+    word-break: keep-all;
+}
+/* ==================================================================== */
+
+/* ====================== 모바일 버전 ============================ */
+@media (max-width: 760px) {
+}
+
+/* ====================== 태블릿 버전 ============================ */
+
+@media (min-width: 760px) and (max-width: 1500px) {
+}
+
+/* ========================== pc버전 ============================= */
+
+@media (min-width: 1500px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #222;
+    }
+    header h1 {
+        width: 300px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .main_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .reserv {
+        text-align: right;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #222;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: none;
+    }
+    /* container */
+    #container {
+        width: 100vw;
+    }
+    section {
+        width: 100vw;
+        height: 1200px;
+        font-family: "MaruBuri";
+    }
+
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* title 제목 */
+    .t_titl {
+        width: 1500px;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 80px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 60%;
+        height: 3px;
+        background-color: #405f6f;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+    }
+    .t_down {
+        width: 1500px;
+        height: 3px;
+        background-color: #405f6f;
+        margin: 0px auto;
+    }
+    .t_txt {
+        width: 1500px;
+        line-height: 30px;
+        font-size: 18px;
+        font-family: "MaruBuri";
+        text-align: right;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+        padding-right: 30px;
+    }
+    /* page01 */
+    .page01 {
+        height: 1600px;
+        background-color: #f1ece1;
+        margin-top: 100px;
+        box-sizing: border-box;
+        padding-top: 150px;
+    }
+    .p1_txt {
+        text-align: center;
+    }
+    .p1_txt h2 {
+        font-size: 40px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        color: #6992a8;
+        margin-bottom: 15px;
+    }
+    .p1_txt p {
+        font-size: 18px;
+    }
+    .promo_box {
+        width: 1500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px auto;
+        gap: 50px;
+        margin-top: 100px;
+    }
+    .promo_box > li {
+        width: calc(100% / 3 -50px);
+    }
+    .promo_box > li:nth-child(2),
+    .promo_box > li:nth-child(5) {
+        margin-top: 50px;
+    }
+    .promo_box img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .promo_box h3 {
+        margin: 10px 0px;
+    }
+    /* page02 */
+    .page02 {
+        height: 1100px;
+        position: relative;
+    }
+    .p2_bg {
+        width: 100%;
+        height: 50%;
+        background-color: #f1ece1;
+        position: absolute;
+        bottom: 0px;
+    }
+    .event_box {
+        width: 1350px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .event_box > li {
+        position: relative;
+    }
+    .event_box > li a {
+        width: 100%;
+        height: 100%;
+    }
+    .event_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .event_box > li:nth-child(2),
+    .event_box > li:nth-child(3) {
+        width: 520px;
+    }
+    .event_box > li:nth-child(2) {
+        text-align: center;
+        position: relative;
+    }
+    .event_box > li:nth-child(3) img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .event_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .event_txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .e_txt {
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        color: #fff;
+    }
+    .event_box h2 {
+        font-size: 40px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        color: #6992a8;
+        margin-bottom: 15px;
+    }
+    /* page03 */
+    .page03 {
+        height: 1100px;
+        position: relative;
+    }
+    .slide {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    .dwn {
+        margin-top: 50px;
+    }
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 150px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 200px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 40px;
+    }
+    .f_logo {
+        width: 200px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}

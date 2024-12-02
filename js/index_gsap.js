@@ -6,7 +6,7 @@ $(function () {
             end: "200%",
             pin: true,
             scrub: 2,
-            markers: true,
+            // markers: true,
         },
     })
         .to(
@@ -71,7 +71,7 @@ $(function () {
             scrub: 2,
             start: "top",
             end: "200%",
-            markers: true,
+            // markers: true,
         },
     })
         .to(
@@ -102,7 +102,7 @@ $(function () {
             end: "200%",
             pin: true,
             scrub: 2,
-            markers: true,
+            // markers: true,
         },
     })
         .to(
@@ -139,7 +139,7 @@ $(function () {
             end: "200%",
             pin: true,
             scrub: 2,
-            markers: true,
+            // markers: true,
         },
     })
         .to(
@@ -185,7 +185,7 @@ $(function () {
             end: "20% top",
             pin: true,
             scrub: 2,
-            markers: true,
+            // markers: true,
         },
     }).to(
         ".imgBox",
