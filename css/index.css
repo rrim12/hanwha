@@ -1619,10 +1619,11 @@ body {
     /* page02 */
     .page02 {
         overflow: hidden;
+        height: 1200px !important;
     }
     .l_bgbox {
         width: 400px;
-        height: 1000px;
+        height: 1200px !important;
         background-color: #f1ece1;
         position: absolute;
         top: 0px;
@@ -1690,9 +1691,12 @@ body {
         z-index: 2;
     }
     /* page03 */
+    .page03 {
+        height: 1200px !important;
+    }
     .r_bgbox {
         width: 400px;
-        height: 1000px;
+        height: 1200px !important;
         background-color: #f1ece1;
         position: absolute;
         top: 0px;
@@ -1734,9 +1738,12 @@ body {
         transform: translateY(-50%);
     }
     /* page04 */
+    .page04 {
+        height: 1200px;
+    }
     .l_bgbox {
         width: 400px;
-        height: 1000px;
+        height: 1200px !important;
         background-color: #f1ece1;
         position: absolute;
         top: 0px;
