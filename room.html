@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Room</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.transform2d.js"></script>
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/room.css" />
+        <!-- 폰트어썸 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- 폰트 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-family: "Noto Serif Display", serif; -->
+    </head>
+    <body>
+        <header>
+            <ul class="menu_wrap">
+                <li>
+                    <h1>
+                        <a href="index.html">
+                            <img
+                                class="logo_colo"
+                                src="img/logo_color.png"
+                                alt="한화리조트 로고"
+                            />
+                        </a>
+                    </h1>
+                </li>
+                <li>
+                    <ul class="main_menu">
+                        <li>
+                            <a href="resort_park.html"
+                                >Resort & Park
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="room.html">
+                                Room
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mung_packer.html"
+                                >Mung Packer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="special_offer.html"
+                                >Special Offer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="reserv">
+                        <a href="reservation.html">
+                            <p>Reservation</p>
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="side_menu">
+                        <div class="bars">
+                            <div class="bar up"></div>
+                            <div class="bar midd"></div>
+                            <div class="bar down"></div>
+                        </div>
+                        <div class="ham_menu">
+                            <div class="go_wrap">
+                                <a href="resort_park.html"
+                                    >Resort & Park
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="room.html"
+                                    >Room
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="mung_packer.html"
+                                    >Mung Packer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="special_offer.html"
+                                    >Special Offer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="reservation.html"
+                                    >Reservation
+                                    <div class="under_bar"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div id="container">
+            <div class="title">
+                <h2 class="t_titl colo_dark">Room<span class="t_up"></span></h2>
+                <p class="t_txt">
+                    한화리조트의 다양하고 감각적인 인테리어와 특별한 여유를<br />
+                    느낄 수 있는 객실에서 잊을 수 없는 여행의 경험을 선사합니다.
+                </p>
+                <div class="t_down"></div>
+            </div>
+            <section class="page01">
+                <div class="p1_bg"></div>
+                <ul class="bed">
+                    <li>
+                        <img src="img/room02_800.jpg" alt="베드룸" />
+                    </li>
+                    <li>
+                        <img
+                            class="cushion"
+                            src="img/bed12_800.jpg"
+                            alt="베드 위에 쿠션"
+                        />
+                        <img
+                            class="bedding"
+                            src="img/housekeepin06_800.jpg"
+                            alt="베드 정리"
+                        />
+                    </li>
+                    <li>
+                        <img src="img/room04_800.jpg" alt="욕실" />
+                    </li>
+                </ul>
+                <div class="p1_txt">
+                    <p>
+                        <span class="p1txt_up">아늑하고 편안함을 선사하는</span
+                        ><br />
+                        <strong class="p1txt_up2"
+                            >한화리조트만의 포근한 객실</strong
+                        >
+                    </p>
+                    <a href="reservation.html" class="more_box p1Up">
+                        <span>예약하기</span>
+                        <div class="circle"></div>
+                    </a>
+                </div>
+            </section>
+            <section class="page02">
+                <ul class="amenity">
+                    <li>
+                        <img src="img/housekeepin07_800.jpg" alt="침구정리" />
+                    </li>
+                    <li>
+                        <p class="a_txt">
+                            포근하고 깨끗한<br />
+                            <strong>힐링 침구</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="a_txt">
+                            매일 제공되는<br />
+                            <strong>어메니티</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/housekeepin05_800.jpg" alt="타월정리" />
+                    </li>
+                </ul>
+                <div class="breakfast">
+                    <div class="bf_bg"></div>
+                    <img src="img/bed06_800.jpg" alt="조식" />
+                    <div class="bf_txt">
+                        <a href="reservation.html" class="more_box bf_up">
+                            <span>예약하기</span>
+                            <div class="circle"></div>
+                        </a>
+                        <p>
+                            <span class="bf_txt1"
+                                >객실에서 맞이하는 편안한 아침식사</span
+                            >
+                            <br />
+                            <strong class="bf_txt2">굿모닝 룸서비스</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="page03">
+                <ul class="p3_bg">
+                    <li class="back_bg_up"></li>
+                    <li class="back_bg_down"></li>
+                </ul>
+                <div class="p3_wrap">
+                    <ul class="resort_txt">
+                        <li class="showup">
+                            <h2>아늑한 분위기를 담은 디럭스 더블 룸</h2>
+                        </li>
+                        <li>
+                            <h2>아늑한 분위기를 담은 디럭스 패밀리 룸</h2>
+                        </li>
+                        <li>
+                            <h2>모던한 무드의 프리미엄 스위트 룸</h2>
+                        </li>
+                        <li>
+                            <h2>다양한 가족 구성에 알맞은 프레지덴셜 룸</h2>
+                        </li>
+                        <li>
+                            <h2>프라이빗한 모던 로얄 룸</h2>
+                        </li>
+                    </ul>
+                    <div class="slide_wrap">
+                        <div class="img_wrap">
+                            <ul class="main_imgs">
+                                <li>
+                                    <img
+                                        src="img/room1.jpg"
+                                        alt="디럭스 더블 룸"
+                                    />
+                                    <div class="image_bg"></div>
+                                    <a href="reservation.html" class="more_box">
+                                        <span>예약하기</span>
+                                        <div class="circle"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img
+                                        src="img/room2.jpg"
+                                        alt="디럭스 패밀리 룸"
+                                    />
+                                    <div class="image_bg"></div>
+                                    <a href="reservation.html" class="more_box">
+                                        <span>예약하기</span>
+                                        <div class="circle"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img
+                                        src="img/room3.jpg"
+                                        alt="프리미엄 스위트 룸"
+                                    />
+                                    <div class="image_bg"></div>
+                                    <a href="reservation.html" class="more_box">
+                                        <span>예약하기</span>
+                                        <div class="circle"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img
+                                        src="img/room4.jpg"
+                                        alt="프레지덴셜 룸"
+                                    />
+                                    <div class="image_bg"></div>
+                                    <a href="reservation.html" class="more_box">
+                                        <span>예약하기</span>
+                                        <div class="circle"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img
+                                        src="img/room5.jpg"
+                                        alt="모던 로얄 룸"
+                                    />
+                                    <div class="image_bg"></div>
+                                    <a href="reservation.html" class="more_box">
+                                        <span>예약하기</span>
+                                        <div class="circle"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img
+                                        src="img/room1.jpg"
+                                        alt="디럭스 더블 룸"
+                                    />
+                                    <div class="image_bg"></div>
+                                    <a href="reservation.html" class="more_box">
+                                        <span>예약하기</span>
+                                        <div class="circle"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prev" href="#">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div class="next" href="#">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <ul class="navibar">
+                            <li class="colo_on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="top_butt">
+                <a href="#">
+                    <img src="img/top_butt.svg" alt="다이아몬드 모양의 버튼" />
+                    <span>TOP</span>
+                </a>
+            </div>
+            <ul class="f_txt">
+                <li>
+                    <p class="sns_txt">SNS</p>
+                    <ul class="sns">
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-whatsapp"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-regular fa-comment"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <p>
+                        Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.
+                    </p>
+                </li>
+                <li>
+                    <a href="index.html"
+                        ><img
+                            class="f_logo"
+                            src="img/footer_logo.webp"
+                            alt="한화리조트 로고"
+                    /></a>
+                    <p class="cs_center">고객센터 1588-2299</p>
+                    <p class="f_contact">
+                        한화호텔앤드리조트(주) 서울특별시 중구 소공로 119, 6~8층
+                        (우) 04525
+                    </p>
+                    <p class="f_contact">
+                        사업자등록번호 : 101-81-30747 (대표자 : 김형조)
+                    </p>
+                    <p class="f_contact">
+                        통신판매업 신고번호 : 2024-서울중구-0776
+                    </p>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+        <script src="js/room.js"></script>
+        <script src="js/room_gsap.js"></script>
+    </body>
+</html>

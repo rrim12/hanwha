@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Reservation</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.transform2d.js"></script>
+        <script src="js/splitting.min.js"></script>
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/reservation.css" />
+        <!-- 폰트어썸 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- 폰트 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-family: "Noto Serif Display", serif; -->
+    </head>
+    <body>
+        <header>
+            <ul class="menu_wrap">
+                <li>
+                    <h1>
+                        <a href="index.html">
+                            <img
+                                class="logo_colo"
+                                src="img/logo_color.png"
+                                alt="한화리조트 로고"
+                            />
+                        </a>
+                    </h1>
+                </li>
+                <li>
+                    <ul class="main_menu">
+                        <li>
+                            <a href="resort_park.html"
+                                >Resort & Park
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="room.html">
+                                Room
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mung_packer.html"
+                                >Mung Packer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="special_offer.html"
+                                >Special Offer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="reserv">
+                        <a href="reservation.html">
+                            <p>Reservation</p>
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="side_menu">
+                        <div class="bars">
+                            <div class="bar up"></div>
+                            <div class="bar midd"></div>
+                            <div class="bar down"></div>
+                        </div>
+                        <div class="ham_menu">
+                            <div class="go_wrap">
+                                <a href="resort_park.html"
+                                    >Resort & Park
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="room.html"
+                                    >Room
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="mung_packer.html"
+                                    >Mung Packer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="special_offer.html"
+                                    >Special Offer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="reservation.html"
+                                    >Reservation
+                                    <div class="under_bar"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div id="container">
+            <div class="title">
+                <h2 class="t_titl colo_light">
+                    Reservation<span class="t_up"></span>
+                </h2>
+                <p class="t_txt">
+                    항상 고객의 의견에 귀 기울이며,
+                    <br />
+                    최고의 서비스를 제공하도록 노력하겠습니다.
+                </p>
+                <div class="t_down"></div>
+            </div>
+            <section class="page01">
+                <ul class="reservs">
+                    <li>
+                        <div class="p1_txt">
+                            <h2>객실 예약</h2>
+                            <p>
+                                투숙기간, 객실 수를 입력 후 객실을 검색해보세요.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <ul class="days">
+                                <li>
+                                    <p>체크인</p>
+                                    <input
+                                        class="check"
+                                        type="date"
+                                        id="start"
+                                        value="2024-12-01"
+                                    />
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </li>
+                                <li>
+                                    <p>체크아웃</p>
+                                    <input
+                                        class="check"
+                                        type="date"
+                                        id="end"
+                                        value="2024-12-01"
+                                    />
+                                </li>
+                            </ul>
+                            <p class="rooms">객실 수</p>
+                            <ul class="room_num">
+                                <li><i class="fa-solid fa-minus"></i></li>
+                                <li>1실</li>
+                                <li><i class="fa-solid fa-plus"></i></li>
+                            </ul>
+                            <a href="#" class="more_box">
+                                <span>객실검색</span>
+                                <div class="circle"></div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/reserv.jpg" alt="노트북 중인 사람 손" />
+                    </li>
+                </ul>
+            </section>
+            <section class="page02">
+                <div class="pic_bg">
+                    <div class="shadow_bg"></div>
+                    <div class="pic_txt">
+                        <h2>고객의 소리 처리 프로세스</h2>
+                        <p>
+                            항상 고객의 의견에 귀 기울이며, 최고의 서비스를
+                            제공하도록 노력하겠습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="back_bg"></div>
+                <ul class="cs_process">
+                    <li class="wid30">
+                        <div class="icon_bg">
+                            <img src="img/icon01.svg" alt="서류 이모지" />
+                        </div>
+                        <h3>신청</h3>
+                        <p>
+                            홈페이지, 전화, 카톡으로<br />
+                            신청하세요.
+                        </p>
+                    </li>
+                    <li class="icon_left">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="wid30">
+                        <div class="icon_bg">
+                            <img src="img/icon02.svg" alt="폴더 이모지" />
+                        </div>
+                        <h3>접수</h3>
+                        <p>
+                            접수사항 및<br />
+                            담당자가 지정됩니다.
+                        </p>
+                    </li>
+                    <li class="icon_left">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="wid30">
+                        <div class="icon_bg">
+                            <img src="img/icon03.svg" alt="편지 이모지" />
+                        </div>
+                        <h3>처리</h3>
+                        <p>
+                            담당자가<br />
+                            답변을 드립니다.
+                        </p>
+                    </li>
+                    <li class="icon_left">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="wid30">
+                        <div class="icon_bg">
+                            <img
+                                class="docu_emoji"
+                                src="img/icon04.svg"
+                                alt="서류 이모지2"
+                            />
+                        </div>
+                        <h3>완료</h3>
+                        <p>
+                            고객님의 문의 및 불만 사항에<br />
+                            대한 처리가 완료됩니다.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs_service">
+                    <li>고객센터 상담시간</li>
+                    <li>
+                        주중(월-금) 9AM – 5PM (점심시간 12PM – 1PM)<br />
+                        주말(토,일) 및 공휴일 휴무
+                    </li>
+                    <li>1588-2299</li>
+                    <li>
+                        <a href="#" class="more_box">
+                            <span>접수신청</span>
+                            <div class="circle"></div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="page03">
+                <div class="pic_bg2">
+                    <div class="shadow_bg"></div>
+                    <div class="pic_txt">
+                        <h2>자주하는질문 (FAQ)</h2>
+                        <p>
+                            한화리조트를 이용하는 고객님이 자주 찾는 질문과
+                            답변을 확인할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="back_bg"></div>
+                <ul class="search_wrap">
+                    <li>
+                        <select>
+                            <option>전체</option>
+                            <option>제목</option>
+                            <option>내용</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input
+                            class="inputbox"
+                            type="text"
+                            placeholder="검색어를 입력해주세요."
+                        />
+                    </li>
+                    <li><a class="search" href="#">검색</a></li>
+                </ul>
+                <div class="search_box">
+                    <h3>총<span>21</span>건</h3>
+                    <ul class="q_and_a">
+                        <li>
+                            <div class="qa">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p>
+                                    마티에 오시리아 선결제 위약규정이 어떻게
+                                    되나요?
+                                </p>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="inbox">
+                                마티에 오시리아 선결제 위약 규정은 아래와
+                                같습니다.<br />
+                                ■ 여름∙겨울 성수기(준성수기A/B
+                                /성수기/극성수기)<br />
+                                - 사용예정일 10일 전까지 취소 : 취소 수수료
+                                없음<br />
+                                - 7일 ~ 9일 전 취소 : 결제금액의 10% 차감<br />
+                                - 5일 ~ 6일 전 취소 : 결제금액의 30% 차감<br />
+                                - 3일 ~ 4일 전 취소 : 결제금액의 50% 차감<br />
+                                - 당일 ~ 2일 전 취소 및 No-Show : 결제금액의 80%
+                                차감
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qa">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p>예약 확인 문자 발송 기준은 무엇인가요?</p>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="inbox">
+                                예약확인 문자는 예약 시 바로 자동적으로 발송되지
+                                않으며, 예약일로부터 10일 전과 3일 전 오전 9시
+                                30분경 사용자 연락처로 발송해 드립니다. 사용자
+                                연락처를 기입하지 않은 경우, 예약 확인 문자를
+                                받지 못하오니 참고해 주시기 바랍니다. 홈페이지나
+                                전화로 예약하실 때 바로 문자를 받기 원하시는
+                                경우 별도로 문자 서비스를 이용해 주시기
+                                바랍니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qa">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p>객실료 선결제가 가능한가요?</p>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="inbox">
+                                한화리조트 공식 사이트를 통해 예약하실 경우 결제
+                                방식을 '선결제'로 선택해 주시면 객실료 결제가
+                                가능합니다. 이미 완료된 예약의 객실료 결제를
+                                희망하시는 경우 예약하신 리조트/호텔 프런트로
+                                문의해 주시기 바랍니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qa">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p>예약변경/취소는 어떻게 하나요?</p>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="inbox">
+                                ■ 웹 사이트 로그인▶홈페이지 상단
+                                '예약확인/취소'▶변경/취소 ■ 모바일 사이트
+                                로그인▶마이페이지>예약현황▶예약변경/예약취소
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qa">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p>패키지 예약은 어떻게 하나요?</p>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="inbox">
+                                ■ 웹<br />
+                                로그인▶통합예약▶패키지 예약▶패키지
+                                선택▶지역/날짜 선택▶사용자 정보 등록 후
+                                결제▶예약완료<br />
+                                ■ 모바일<br />
+                                로그인▶우측 상단▶프로모션▶패키지 선택▶지역/날짜
+                                선택▶사용자 정보 등록 후 결제▶예약완료
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="box_navi">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="top_butt">
+                <a href="#">
+                    <img src="img/top_butt.svg" alt="다이아몬드 모양의 버튼" />
+                    <span>TOP</span>
+                </a>
+            </div>
+            <ul class="f_txt">
+                <li>
+                    <p class="sns_txt">SNS</p>
+                    <ul class="sns">
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-whatsapp"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-regular fa-comment"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <p>
+                        Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.
+                    </p>
+                </li>
+                <li>
+                    <a href="index.html"
+                        ><img
+                            class="f_logo"
+                            src="img/footer_logo.webp"
+                            alt="한화리조트 로고"
+                    /></a>
+                    <p class="cs_center">고객센터 1588-2299</p>
+                    <p class="f_contact">
+                        한화호텔앤드리조트(주) 서울특별시 중구 소공로 119, 6~8층
+                        (우) 04525
+                    </p>
+                    <p class="f_contact">
+                        사업자등록번호 : 101-81-30747 (대표자 : 김형조)
+                    </p>
+                    <p class="f_contact">
+                        통신판매업 신고번호 : 2024-서울중구-0776
+                    </p>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+        <script src="js/reservation.js"></script>
+        <script src="js/reservation_gsap.js"></script>
+    </body>
+</html>

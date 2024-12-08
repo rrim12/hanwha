@@ -1,0 +1,1884 @@
+/* font */
+@font-face {
+    font-family: "MaruBuri";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriSemiBold";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriBold";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriLight";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.ttf)
+            format("truetype");
+}
+@font-face {
+    font-family: "MaruBuriExtraLight";
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.eot?#iefix)
+            format("embedded-opentype"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2)
+            format("woff2"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff)
+            format("woff"),
+        url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.ttf)
+            format("truetype");
+}
+html {
+    overflow-x: hidden;
+}
+/* body */
+body {
+    position: relative;
+    overflow-x: hidden;
+    word-break: keep-all;
+}
+/* ==================================================================== */
+
+/* ====================== 모바일 버전 ============================ */
+@media (max-width: 760px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #fff;
+    }
+    header h1 {
+        width: 200px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .main_menu {
+        display: none;
+    }
+    .reserv {
+        text-align: right;
+        display: none;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #222;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #fff !important;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    .side_menu {
+        position: relative;
+        z-index: 5;
+    }
+    .ham_menu {
+        width: 400px;
+        height: 1100px;
+        background-color: #a0c4d7;
+        position: absolute;
+        right: -500px;
+        top: -40px;
+        transition: 0.5s;
+    }
+    /* 사이드메뉴 toggle on */
+    .side_on {
+        right: -15px;
+    }
+    .go_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ham_menu .go_wrap > a {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .wh_on {
+        background-color: #fff !important;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: block;
+    }
+    /* 햄버거 X버튼 */
+    .bars {
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+        margin-right: 30px;
+    }
+    .bars a {
+        width: 100%;
+        height: 100%;
+    }
+    .bar {
+        width: 25px;
+        height: 2px;
+        background-color: #222;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .up {
+        top: 0px;
+        left: 0px;
+    }
+    .midd {
+        width: 20px;
+        top: 50%;
+        right: 0px;
+        transform: translate(0%, -50%);
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .down {
+        bottom: 0px;
+        left: 0px;
+    }
+    /* act  x로 바뀌는 class */
+    .on {
+        transform: translateY(11.5px) rotate(-45deg);
+    }
+    .on-d {
+        transform: translateY(-11.5px) rotate(45deg);
+    }
+    .on-m {
+        opacity: 0;
+    }
+
+    /* container */
+    #container {
+        width: 100%;
+    }
+    section {
+        width: 100vw;
+        height: 1200px;
+    }
+
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* title 제목 */
+    .t_titl {
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 50px;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 20%;
+        height: 3px;
+        background-color: #6992a8;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .t_down {
+        width: 80%;
+        height: 3px;
+        background-color: #6992a8;
+        margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .t_txt {
+        width: 80%;
+        line-height: 30px;
+        font-size: 17px;
+        font-family: "MaruBuri";
+        margin: 50px auto;
+        text-align: center;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    /* page01 */
+    .page01 {
+        margin-top: 100px;
+        height: 1100px;
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    .p1_wrap {
+        width: 100%;
+        height: 100%;
+    }
+    .p1_wrap > div {
+        width: 100%;
+        height: 500px;
+    }
+    /* 리조트 이미지 */
+    .img_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .back_imgs {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .back_imgs > li {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 1s;
+    }
+    .back_imgs .imag1 {
+        background-image: url(../img/slide_bg01.jpg);
+        opacity: 1;
+    }
+    .back_imgs .imag2 {
+        background-image: url(../img/slide_bg02.jpg);
+    }
+    .back_imgs .imag3 {
+        background-image: url(../img/slide_bg03.jpg);
+    }
+    .back_imgs .imag4 {
+        background-image: url(../img/slide_bg04.jpg);
+    }
+    .back_imgs .imag5 {
+        background-image: url(../img/slide_bg05.jpg);
+    }
+    .back_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(64, 95, 111, 0.8);
+    }
+    /* 슬라이드 메인 이미지 */
+    .main_imgs {
+        width: 80%;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -60%);
+        overflow: hidden;
+        z-index: 1;
+    }
+    .main_imgs > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+    }
+    .main_imgs > li:nth-child(1) {
+        display: block;
+    }
+    .main_imgs > li > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* resort_txt 리조트 텍스트 */
+
+    .p1_wrap .rtxt_wrap {
+        width: 100%;
+        height: 500px;
+        background-color: #f1ece1;
+        position: relative;
+    }
+    .resort_txt {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-family: "MaruBuri";
+    }
+    .resort_txt li {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .resort_txt li:nth-child(1) {
+        display: block;
+    }
+    .resort_txt h2 {
+        color: #405f6f;
+        font-size: 25px;
+        margin-bottom: 20px;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    .resort_txt p {
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+    /* 슬라이드 navi */
+    .navi_wrap {
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        color: #405f6f;
+    }
+    .navi_wrap a {
+        color: #405f6f;
+    }
+    .navi {
+        height: 15px;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+    }
+    .navi > li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #405f6f;
+        cursor: pointer;
+    }
+    .next,
+    .prev {
+        cursor: pointer;
+    }
+    /* 제이쿼리 add class */
+    .colo_on {
+        background-color: #405f6f;
+    }
+    .back_imgs .zoom {
+        opacity: 1;
+    }
+    .resort_txt .up {
+        transform: translateY(0);
+    }
+    /* page02 */
+    .page02 {
+        height: 100%;
+        font-family: "MaruBuri";
+        margin-bottom: 200px;
+    }
+    .experience {
+        width: 80%;
+        font-family: "Noto Serif Display", serif;
+        font-size: 50px;
+        font-style: italic;
+        text-align: center;
+        margin: 150px auto 90px;
+        color: #6992a8;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .turtle {
+        opacity: 0;
+        transform: translateY(500px) rotate(-60deg);
+    }
+    .fish {
+        opacity: 0;
+        transform: translateY(500px) rotate(-60deg);
+    }
+    .kids {
+        opacity: 0;
+        transform: translateY(500px) rotate(60deg);
+    }
+    .p2_titl {
+        color: #405f6f;
+        font-size: 25px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .p2_txt {
+        line-height: 27px;
+        font-size: 17px;
+        margin: 40px 0px;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .activity {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin: 0px auto 100px;
+    }
+    .activity > li:nth-child(1) > img,
+    .activity > li:nth-child(2) > img {
+        width: 200px;
+        object-fit: cover;
+    }
+    .activity > li:nth-child(1) {
+        margin-top: 100px;
+    }
+    .activity > li:nth-child(3) > img {
+        width: 100%;
+        object-fit: cover;
+    }
+    /* page03 */
+    .page03 {
+        height: 100%;
+        background-color: #f1ece1;
+        font-family: "MaruBuri";
+        padding-top: 180px;
+        box-sizing: border-box;
+    }
+    .page03 .golf {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px auto;
+        gap: 20px;
+        box-sizing: border-box;
+        padding-bottom: 100px;
+    }
+    .golf li {
+        width: calc(100% / 2 -20px);
+    }
+    .golf li:nth-child(1) {
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    .golf li:nth-child(2) {
+        width: 60%;
+        height: 200px;
+        opacity: 0;
+    }
+    .golf li:nth-child(3) {
+        height: 400px;
+        opacity: 0;
+    }
+    .golf li:nth-child(4) {
+        width: 60%;
+        height: 400px;
+        opacity: 0;
+    }
+    .golf img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 50px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .f_logo {
+        width: 150px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}
+
+/* ====================== 태블릿 버전 ============================ */
+
+@media (min-width: 760px) and (max-width: 1500px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #222;
+    }
+    header h1 {
+        width: 300px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .main_menu {
+        display: none;
+    }
+    .reserv {
+        text-align: right;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #222;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #fff !important;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    .side_menu {
+        position: relative;
+        z-index: 5;
+    }
+    .ham_menu {
+        width: 400px;
+        height: 1100px;
+        background-color: #a0c4d7;
+        position: absolute;
+        right: -500px;
+        top: -40px;
+        transition: 0.5s;
+    }
+    /* 사이드메뉴 toggle on */
+    .side_on {
+        right: -5px;
+    }
+    .go_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ham_menu .go_wrap > a {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .wh_on {
+        background-color: #fff !important;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: block;
+    }
+    /* 햄버거 X버튼 */
+    .bars {
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        z-index: 5;
+        margin-right: 30px;
+    }
+    .bars a {
+        width: 100%;
+        height: 100%;
+    }
+    .bar {
+        width: 25px;
+        height: 2px;
+        background-color: #222;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .up {
+        top: 0px;
+        left: 0px;
+    }
+    .midd {
+        width: 20px;
+        top: 50%;
+        right: 0px;
+        transform: translate(0%, -50%);
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .down {
+        bottom: 0px;
+        left: 0px;
+    }
+    /* act  x로 바뀌는 class */
+    .on {
+        transform: translateY(11.5px) rotate(-45deg);
+    }
+    .on-d {
+        transform: translateY(-11.5px) rotate(45deg);
+    }
+    .on-m {
+        opacity: 0;
+    }
+    /* 햄버거 호버시 색 바뀜 */
+    .bar_on {
+        background-color: #a0c4d7;
+    }
+
+    /* container */
+    #container {
+        width: 100%;
+    }
+    section {
+        width: 100vw;
+        height: 1200px;
+    }
+
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* title 제목 */
+    .t_titl {
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 50px;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 20%;
+        height: 3px;
+        background-color: #6992a8;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .t_down {
+        width: 90%;
+        height: 3px;
+        background-color: #6992a8;
+        margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .t_txt {
+        width: 100%;
+        line-height: 25px;
+        font-size: 17px;
+        font-family: "MaruBuri";
+        text-align: right;
+        margin: 30px auto 50px;
+        box-sizing: border-box;
+        padding-right: 100px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    /* page01 */
+    .page01 {
+        margin-top: 100px;
+        height: 1100px;
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    .p1_wrap {
+        width: 100%;
+        height: 100%;
+    }
+    .p1_wrap > div {
+        width: 100%;
+        height: 600px;
+    }
+    /* 리조트 이미지 */
+    .img_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .back_imgs {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .back_imgs > li {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 1s;
+    }
+    .back_imgs .imag1 {
+        background-image: url(../img/slide_bg01.jpg);
+        opacity: 1;
+    }
+    .back_imgs .imag2 {
+        background-image: url(../img/slide_bg02.jpg);
+    }
+    .back_imgs .imag3 {
+        background-image: url(../img/slide_bg03.jpg);
+    }
+    .back_imgs .imag4 {
+        background-image: url(../img/slide_bg04.jpg);
+    }
+    .back_imgs .imag5 {
+        background-image: url(../img/slide_bg05.jpg);
+    }
+    .back_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(64, 95, 111, 0.8);
+    }
+
+    /* 슬라이드 메인 이미지 */
+    .main_imgs {
+        width: 90%;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -60%);
+        overflow: hidden;
+        z-index: 1;
+    }
+    .main_imgs > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+    }
+    .main_imgs > li:nth-child(1) {
+        display: block;
+    }
+    .main_imgs > li > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* resort_txt 리조트 텍스트 */
+
+    .p1_wrap .rtxt_wrap {
+        width: 100%;
+        height: 500px;
+        background-color: #f1ece1;
+        position: relative;
+    }
+    .resort_txt {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-family: "MaruBuri";
+    }
+    .resort_txt li {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .resort_txt li:nth-child(1) {
+        display: block;
+    }
+    .resort_txt h2 {
+        color: #405f6f;
+        font-size: 30px;
+        margin-bottom: 20px;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    .resort_txt p {
+        line-height: 30px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+    /* 슬라이드 navi */
+    .navi_wrap {
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        color: #405f6f;
+    }
+    .navi_wrap a {
+        color: #405f6f;
+    }
+    .navi {
+        height: 15px;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+    }
+    .navi > li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #405f6f;
+        cursor: pointer;
+    }
+    .next,
+    .prev {
+        cursor: pointer;
+    }
+    /* 제이쿼리 add class */
+    .colo_on {
+        background-color: #405f6f;
+    }
+    .back_imgs .zoom {
+        opacity: 1;
+    }
+    .resort_txt .up {
+        transform: translateY(0);
+    }
+    /* page02 */
+    .page02 {
+        height: 100%;
+        font-family: "MaruBuri";
+        margin-bottom: 200px;
+    }
+    .experience {
+        font-family: "Noto Serif Display", serif;
+        font-size: 60px;
+        font-style: italic;
+        text-align: center;
+        margin: 150px 0px 90px;
+        color: #6992a8;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .turtle {
+        opacity: 0;
+        transform: translateY(500px) rotate(-60deg);
+    }
+    .fish {
+        opacity: 0;
+        transform: translateY(500px) rotate(-60deg);
+    }
+    .kids {
+        opacity: 0;
+        transform: translateY(500px) rotate(60deg);
+    }
+    .p2_titl {
+        color: #405f6f;
+        font-size: 25px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .p2_txt {
+        line-height: 27px;
+        font-size: 17px;
+        margin: 40px 0px;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .activity {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+    .activity > li:nth-child(1) > img,
+    .activity > li:nth-child(2) > img {
+        width: 200px;
+        object-fit: cover;
+    }
+    .activity > li:nth-child(1) {
+        margin-top: 100px;
+    }
+    .activity > li:nth-child(3) > img {
+        width: 600px;
+        object-fit: cover;
+    }
+    /* page03 */
+    .page03 {
+        height: 100%;
+        background-color: #f1ece1;
+        font-family: "MaruBuri";
+        padding-top: 180px;
+        box-sizing: border-box;
+    }
+    .page03 .golf {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px auto;
+        gap: 20px;
+        box-sizing: border-box;
+        padding-bottom: 100px;
+    }
+    .golf li {
+        width: calc(100% / 2 -20px);
+    }
+    .golf li:nth-child(1) {
+        width: 600px;
+        height: 200px;
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    .golf li:nth-child(2) {
+        width: 40%;
+        height: 200px;
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+    .golf li:nth-child(3) {
+        height: 400px;
+        opacity: 0;
+        transform: translateY(800px);
+    }
+    .golf li:nth-child(4) {
+        width: 40%;
+        height: 400px;
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    .golf img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 50px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 200px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .f_logo {
+        width: 200px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}
+
+/* ========================== pc버전 ============================= */
+
+@media (min-width: 1500px) {
+    /* header */
+    header {
+        width: 100vw;
+        font-family: "Noto Serif Display", serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .menu_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_wrap > li:nth-child(1),
+    .menu_wrap > li:nth-child(3) {
+        width: 30%;
+    }
+    .menu_wrap > li:nth-child(2) {
+        width: 40%;
+    }
+    header a {
+        color: #222;
+    }
+    header h1 {
+        width: 300px;
+        height: 100%;
+    }
+    header h1 > a {
+        width: 100%;
+        height: 100%;
+    }
+    .logo_colo {
+        width: 100%;
+        height: 100%;
+    }
+    .main_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .reserv {
+        text-align: right;
+    }
+    .reserv > a {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #222;
+        box-sizing: border-box;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .reserv > a p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .under_bar {
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+        margin-top: 4px;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    /* 헤더밑줄 class */
+    .under_on {
+        transform: scale(1);
+    }
+    /* 링크버튼 박스 차오르는 색 */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #a0c4d7;
+        position: absolute;
+        bottom: -550%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .fill_up {
+        bottom: -150%;
+    }
+    .side_menu {
+        display: none;
+    }
+    /* container */
+    #container {
+        width: 100vw;
+    }
+    section {
+        width: 100vw;
+        height: 1200px;
+    }
+
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* title 제목 */
+    .t_titl {
+        width: 1500px;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 80px;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 520px;
+        height: 3px;
+        background-color: #6992a8;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+    }
+    .t_down {
+        width: 1500px;
+        height: 3px;
+        background-color: #6992a8;
+        margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .t_txt {
+        width: 1500px;
+        line-height: 30px;
+        font-size: 18px;
+        font-family: "MaruBuri";
+        text-align: right;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+        padding-right: 30px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    /* page01 */
+    .page01 {
+        margin-top: 100px;
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    .p1_wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .p1_wrap > div {
+        width: 50%;
+        height: 100%;
+    }
+    /* 리조트 이미지 */
+    .img_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .back_imgs {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .back_imgs > li {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 1s;
+    }
+    .back_imgs .imag1 {
+        background-image: url(../img/slide_bg01.jpg);
+        opacity: 1;
+    }
+    .back_imgs .imag2 {
+        background-image: url(../img/slide_bg02.jpg);
+    }
+    .back_imgs .imag3 {
+        background-image: url(../img/slide_bg03.jpg);
+    }
+    .back_imgs .imag4 {
+        background-image: url(../img/slide_bg04.jpg);
+    }
+    .back_imgs .imag5 {
+        background-image: url(../img/slide_bg05.jpg);
+    }
+    .back_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(64, 95, 111, 0.8);
+    }
+    /* 슬라이드 메인 이미지 */
+    .main_imgs {
+        width: 900px;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        right: -120px;
+        transform: translateY(-60%);
+        overflow: hidden;
+        z-index: 1;
+    }
+    .main_imgs > li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+    }
+    .main_imgs > li:nth-child(1) {
+        display: block;
+    }
+    .main_imgs > li > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* resort_txt 리조트 텍스트 */
+
+    .rtxt_wrap {
+        width: 100%;
+        height: 100%;
+        background-color: #f1ece1;
+        position: relative;
+    }
+    .resort_txt {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-family: "MaruBuri";
+    }
+    .resort_txt li {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        display: none;
+    }
+    .resort_txt li:nth-child(1) {
+        display: block;
+    }
+    .resort_txt h2 {
+        color: #405f6f;
+        font-size: 42px;
+        margin-bottom: 20px;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    .resort_txt p {
+        line-height: 30px;
+        font-size: 18px;
+        margin-bottom: 50px;
+        transition: 1s;
+    }
+    .resort_txt a {
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 슬라이드 navi */
+    .navi_wrap {
+        width: 100%;
+        height: 50px;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        bottom: 300px;
+        right: 0px;
+        color: #405f6f;
+    }
+    .navi_wrap a {
+        color: #405f6f;
+    }
+    .navi {
+        height: 15px;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+    }
+    .navi > li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #405f6f;
+        cursor: pointer;
+    }
+    .next,
+    .prev {
+        cursor: pointer;
+    }
+    /* 제이쿼리 add class */
+    .colo_on {
+        background-color: #405f6f;
+    }
+    .back_imgs .zoom {
+        opacity: 1;
+    }
+    .resort_txt .up {
+        transform: translateY(0);
+    }
+    /* page02 */
+    .page02 {
+        height: 1100px;
+        font-family: "MaruBuri";
+    }
+    .experience {
+        font-family: "Noto Serif Display", serif;
+        font-size: 80px;
+        font-style: italic;
+        text-align: center;
+        margin: 150px 0px 90px;
+        color: #6992a8;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .turtle {
+        opacity: 0;
+        transform: translateY(500px) rotate(-60deg);
+    }
+    .fish {
+        opacity: 0;
+        transform: translateY(500px) rotate(-60deg);
+    }
+    .kids {
+        opacity: 0;
+        transform: translateY(500px) rotate(60deg);
+    }
+    .p2_titl {
+        color: #405f6f;
+        font-size: 30px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .p2_txt {
+        line-height: 27px;
+        margin: 40px 0px;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    .activity {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .activity > li:nth-child(1) > img,
+    .activity > li:nth-child(2) > img {
+        width: 200px;
+        object-fit: cover;
+    }
+    .activity > li:nth-child(1) {
+        margin-top: 100px;
+    }
+    .activity > li:nth-child(3) > img {
+        width: 600px;
+        object-fit: cover;
+    }
+    /* page03 */
+    .page03 {
+        height: 1100px;
+        background-color: #f1ece1;
+        font-family: "MaruBuri";
+        padding-top: 180px;
+        box-sizing: border-box;
+    }
+    .golf {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px auto;
+        gap: 20px;
+    }
+    .golf li {
+        width: calc(100% / 2 -20px);
+    }
+    .golf li:nth-child(1) {
+        width: 600px;
+        height: 200px;
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    .golf li:nth-child(2) {
+        width: 30%;
+        height: 200px;
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+    .golf li:nth-child(3) {
+        height: 400px;
+        opacity: 0;
+        transform: translateY(800px);
+    }
+    .golf li:nth-child(4) {
+        width: 30%;
+        height: 400px;
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    .golf img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* footer */
+    footer {
+        width: 100vw;
+        font-family: "MaruBuriExtraLight";
+        font-size: 14px;
+        font-weight: 100;
+        background-color: #405f6f;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt {
+        position: absolute;
+        right: 100px;
+        top: -50px;
+        z-index: 2;
+    }
+    .top_butt > a {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        position: relative;
+    }
+    .top_butt > a img {
+        width: 100%;
+        height: 100%;
+    }
+    .top_butt > a span {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 150px;
+        box-sizing: border-box;
+    }
+    .sns_txt {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .sns {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 200px;
+    }
+    .sns a {
+        color: #fff;
+        font-size: 40px;
+    }
+    .f_logo {
+        width: 200px;
+        object-fit: cover;
+        margin-right: -20px;
+    }
+    .f_txt li:nth-child(2) {
+        text-align: right;
+    }
+    .cs_center {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .f_contact {
+        margin-bottom: 3.5px;
+    }
+}
