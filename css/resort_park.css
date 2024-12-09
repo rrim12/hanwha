@@ -577,7 +577,8 @@ body {
     }
     /* page03 */
     .page03 {
-        height: 100vh;
+        width: 100vw;
+        height: 1700px;
         background-color: #f1ece1;
         font-family: "MaruBuri";
         padding-top: 180px;

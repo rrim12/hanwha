@@ -162,11 +162,11 @@ body {
     }
     /* 사이드메뉴 toggle on */
     .side_on {
-        right: -15px;
+        right: -30px;
     }
     .go_wrap {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -209,7 +209,7 @@ body {
         cursor: pointer;
         position: relative;
         z-index: 5;
-        margin-right: 30px;
+        margin-right: 10px;
     }
     .bars a {
         width: 100%;
@@ -400,6 +400,7 @@ body {
         opacity: 0;
     }
     .box {
+        width: 90%;
         position: absolute;
         top: 85%;
         opacity: 0;

@@ -69,7 +69,7 @@ $(function () {
             if (i == total - 1) {
                 $(".main_imgs")
                     .stop()
-                    .animate({ "margin-left": "-500%" }, 1500, function () {
+                    .animate({ "margin-left": "-500%" }, 1000, function () {
                         $(".main_imgs").css({ "margin-left": 0 });
                     });
                 i = 0;
@@ -83,7 +83,7 @@ $(function () {
     function slid() {
         $(".main_imgs")
             .stop()
-            .animate({ "margin-left": -i * 900 }, 1500);
+            .animate({ "margin-left": -i * 900 }, 1000);
     }
     function navi() {
         $(".navibar li").removeClass("colo_on");
