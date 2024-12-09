@@ -352,7 +352,7 @@ body {
         position: relative;
     }
     .reservs {
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -400,7 +400,7 @@ body {
         opacity: 0;
     }
     .box {
-        width: 90%;
+        width: 100%;
         position: absolute;
         top: 85%;
         opacity: 0;
@@ -419,7 +419,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 25px;
+        gap: 0px;
         margin: 0px auto;
         border-bottom: 2.5px dotted #ccc;
         box-sizing: border-box;
