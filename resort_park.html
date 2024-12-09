@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Resort & Park</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.transform2d.js"></script>
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/resort_park.css" />
+        <!-- 폰트어썸 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- 폰트 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-family: "Noto Serif Display", serif; -->
+    </head>
+    <body>
+        <header>
+            <ul class="menu_wrap">
+                <li>
+                    <h1>
+                        <a href="index.html">
+                            <img
+                                class="logo_colo"
+                                src="img/logo_color.png"
+                                alt="한화리조트 로고"
+                            />
+                        </a>
+                    </h1>
+                </li>
+                <li>
+                    <ul class="main_menu">
+                        <li>
+                            <a href="resort_park.html"
+                                >Resort & Park
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="room.html">
+                                Room
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mung_packer.html"
+                                >Mung Packer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="special_offer.html"
+                                >Special Offer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="reserv">
+                        <a href="reservation.html">
+                            <p>Reservation</p>
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="side_menu">
+                        <div class="bars">
+                            <div class="bar up"></div>
+                            <div class="bar midd"></div>
+                            <div class="bar down"></div>
+                        </div>
+                        <div class="ham_menu">
+                            <div class="go_wrap">
+                                <a href="resort_park.html"
+                                    >Resort & Park
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="room.html"
+                                    >Room
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="mung_packer.html"
+                                    >Mung Packer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="special_offer.html"
+                                    >Special Offer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="reservation.html"
+                                    >Reservation
+                                    <div class="under_bar"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div id="container">
+            <div class="title">
+                <h2 class="t_titl colo_light">
+                    Resorts & Thema Park<span class="t_up"></span>
+                </h2>
+                <p class="t_txt">
+                    머무는 것 자체로 여행과 쉼이 완성되는 한화리조트입니다.<br />
+                    테마파크에서 사계절 내내 에너제틱한 레저와 편안한 힐링을
+                    동시에 즐겨보세요.
+                </p>
+                <div class="t_down"></div>
+            </div>
+            <section class="page01">
+                <div class="p1_wrap">
+                    <div class="img_wrap">
+                        <ul class="back_imgs">
+                            <li class="imag1">
+                                <div class="back_bg"></div>
+                            </li>
+                            <li class="imag2">
+                                <div class="back_bg"></div>
+                            </li>
+                            <li class="imag3">
+                                <div class="back_bg"></div>
+                            </li>
+                            <li class="imag4">
+                                <div class="back_bg"></div>
+                            </li>
+                            <li class="imag5">
+                                <div class="back_bg"></div>
+                            </li>
+                        </ul>
+                        <ul class="main_imgs">
+                            <li>
+                                <img
+                                    src="img/main_image01.jpg"
+                                    alt="설악 쏘라노 로비"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="img/main_image02.jpg"
+                                    alt="거제 벨메르 수영장"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="img/main_image03.jpg"
+                                    alt="기장 리조트 수영장"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="img/main_image04.jpg"
+                                    alt="여수 리조트 수영장"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="img/main_image05.jpg"
+                                    alt="제주 물위에 떠있는 건물"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rtxt_wrap">
+                        <ul class="resort_txt">
+                            <li>
+                                <h2 class="up">설악 쏘라노</h2>
+                                <p class="up">
+                                    탁 트인 전경과 유럽풍 스타일로 절경을 이루는
+                                    테마형 리조트 설악 쏘라노 울산바위가 탐낸,
+                                    설악의 아름다운 자연과 함께 워터파크, 골프장
+                                    등 다양한 시설을 함께 즐기세요.
+                                </p>
+                                <a href="reservation.html" class="more_box up">
+                                    <span>예약하기</span>
+                                    <div class="circle"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <h2>거제 벨버디어</h2>
+                                <p>
+                                    인피니티풀과 마리나 시설을 갖춘 고품격
+                                    해양리조트 머무는 것 자체로 여행과 쉼이
+                                    완성되는 아름다운 천혜의 자연과 럭셔리한
+                                    해양레저 시설이 매력적인 한화리조트 거제
+                                    벨버디어입니다.
+                                </p>
+                                <a href="reservation.html" class="more_box">
+                                    <span>예약하기</span>
+                                    <div class="circle"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <h2>MATIÈ Osiria</h2>
+                                <p>
+                                    기장의 탁 트인 바다 조망과 속삭이는 듯한
+                                    파도 소리를 선사합니다. 객실 창문 너머로
+                                    보이는 자연을 바라보며 더할 나위 없이
+                                    평화로운 아침을 맞아보세요.
+                                </p>
+                                <a href="reservation.html" class="more_box">
+                                    <span>예약하기</span>
+                                    <div class="circle"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <h2>여수 벨메르</h2>
+                                <p>
+                                    큰 창 가득 이국적인 바다를 바라보며 맛보는
+                                    로컬 음식. 도시의 활기와 천혜의 자연이
+                                    공존하는 여수, 파란 물감을 풀어 놓은 듯한
+                                    여수 바다의 전경을 즐겨보세요.
+                                </p>
+                                <a href="reservation.html" class="more_box">
+                                    <span>예약하기</span>
+                                    <div class="circle"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <h2>제주</h2>
+                                <p>
+                                    바다와 섬, 그리고 도심의 야경이 한눈에
+                                    펼쳐지는 한화리조트 제주. 그림처럼 펼쳐진
+                                    도시의 야경과 바다는 눈으로, 빼어난
+                                    골프코스를 자랑하는 플라자CC와 테라피 센터는
+                                    몸과 마음으로 즐기세요.
+                                </p>
+                                <a href="reservation.html" class="more_box">
+                                    <span>예약하기</span>
+                                    <div class="circle"></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navi_wrap">
+                            <div class="prev">
+                                <i class="fa-solid fa-arrow-left-long"></i>
+                            </div>
+                            <ul class="navi">
+                                <li class="colo_on"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="next">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page02">
+                <h2 class="experience">Experience more</h2>
+                <ul class="activity">
+                    <li>
+                        <img
+                            class="turtle"
+                            src="img/aquarium01.jpg"
+                            alt="거북이와 열대어"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            class="fish"
+                            src="img/aquarium02.jpg"
+                            alt="열대어"
+                        />
+                    </li>
+                    <li>
+                        <h2 class="p2_titl">
+                            설악 워터피아 & 제주 아쿠아플라넷
+                        </h2>
+                        <p class="p2_txt">
+                            눈 앞에 시원하게 펼쳐지는 설악산의 풍경과 천연온천을
+                            즐기는 워터파크<br />
+                            제주 바다를 담은 국내 최대 규모 아쿠아리움
+                        </p>
+                        <img
+                            class="kids"
+                            src="img/pool_kids.jpg"
+                            alt="수영장에서 놀고있는 여자아이들"
+                        />
+                    </li>
+                </ul>
+            </section>
+            <section class="page03">
+                <ul class="golf">
+                    <li>
+                        <h2 class="p2_titl">플라자CC 설악 & 플라자CC 제주</h2>
+                        <p class="p2_txt">
+                            설악의 사계절 절경이 만들어내는 감동과 라운드의
+                            즐거움을 만끽하세요.<br />
+                            제주의 바다와 원시수림대 안에서 라운딩의 상쾌함을
+                            느껴보세요.
+                        </p>
+                    </li>
+                    <li>
+                        <img
+                            src="img/golf03.jpg"
+                            alt="골프공이 핀홀에 들어가는"
+                        />
+                    </li>
+                    <li><img src="img/golf01.jpg" alt="골프하는 남성" /></li>
+                    <li><img src="img/golf02.jpg" alt="골프장 풍경" /></li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <div class="top_butt">
+                <a href="#">
+                    <img src="img/top_butt.svg" alt="다이아몬드 모양의 버튼" />
+                    <span>TOP</span>
+                </a>
+            </div>
+            <ul class="f_txt">
+                <li>
+                    <p class="sns_txt">SNS</p>
+                    <ul class="sns">
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-whatsapp"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-regular fa-comment"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <p>
+                        Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.
+                    </p>
+                </li>
+                <li>
+                    <a href="index.html"
+                        ><img
+                            class="f_logo"
+                            src="img/footer_logo.webp"
+                            alt="한화리조트 로고"
+                    /></a>
+                    <p class="cs_center">고객센터 1588-2299</p>
+                    <p class="f_contact">
+                        한화호텔앤드리조트(주) 서울특별시 중구 소공로 119, 6~8층
+                        (우) 04525
+                    </p>
+                    <p class="f_contact">
+                        사업자등록번호 : 101-81-30747 (대표자 : 김형조)
+                    </p>
+                    <p class="f_contact">
+                        통신판매업 신고번호 : 2024-서울중구-0776
+                    </p>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+        <script src="js/resort_park.js"></script>
+        <script src="js/resort_park_gsap.js"></script>
+    </body>
+</html>

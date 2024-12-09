@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+        />
+        <title>Special Offer</title>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.transform2d.js"></script>
+        <script src="js/splitting.min.js"></script>
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/special_offer.css" />
+        <!-- 폰트어썸 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- 폰트 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-family: "Noto Serif Display", serif; -->
+    </head>
+    <body>
+        <header>
+            <ul class="menu_wrap">
+                <li>
+                    <h1>
+                        <a href="index.html">
+                            <img
+                                class="logo_colo"
+                                src="img/logo_color.png"
+                                alt="한화리조트 로고"
+                            />
+                        </a>
+                    </h1>
+                </li>
+                <li>
+                    <ul class="main_menu">
+                        <li>
+                            <a href="resort_park.html"
+                                >Resort & Park
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="room.html">
+                                Room
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mung_packer.html"
+                                >Mung Packer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="special_offer.html"
+                                >Special Offer
+                                <div class="under_bar"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="reserv">
+                        <a href="reservation.html">
+                            <p>Reservation</p>
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="side_menu">
+                        <div class="bars">
+                            <div class="bar up"></div>
+                            <div class="bar midd"></div>
+                            <div class="bar down"></div>
+                        </div>
+                        <div class="ham_menu">
+                            <div class="go_wrap">
+                                <a href="resort_park.html"
+                                    >Resort & Park
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="room.html"
+                                    >Room
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="mung_packer.html"
+                                    >Mung Packer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="special_offer.html"
+                                    >Special Offer
+                                    <div class="under_bar"></div> </a
+                                ><br />
+                                <a href="reservation.html"
+                                    >Reservation
+                                    <div class="under_bar"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div id="container">
+            <div class="title">
+                <h2 class="t_titl colo_dark">
+                    Special Offer<span class="t_up"></span>
+                </h2>
+                <p class="t_txt">
+                    리조트 여행 준비중이세요?
+                    <br />
+                    다양한 혜택과 이벤트 확인하고 떠나세요.
+                </p>
+                <div class="t_down"></div>
+            </div>
+            <section class="page01">
+                <div class="p1_txt">
+                    <h2>Promotion</h2>
+                    <p>한화리조트의 특별한 이벤트를 놓치지 마세요!</p>
+                </div>
+                <ul class="promo_box">
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/promo03.jpg"
+                                alt="거제로 바다풍경" /></a
+                        ><br />
+                        <a href="#">
+                            <h3>거제로 프리패스</h3>
+                            <p>
+                                키즈시설, 수영장 등 취향대로 거제 여행<br />
+                                2024.11.04 - 2025.01.19
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/promo02.jpg"
+                                alt="선물받는 소녀" /></a
+                        ><br />
+                        <a href="#">
+                            <h3>취향맞춤 화수목 1+1</h3>
+                            <p>
+                                '한화리조트 x 문화가 있는 날'<br />
+                                2박 프로모션<br />
+                                2024.11.18 - 2024.12.30
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/promo01.jpg"
+                                alt="촛불이 켜있는 저녁식사" /></a
+                        ><br />
+                        <a href="#">
+                            <h3>[100만 PARTY] 디너 투게더</h3>
+                            <p>
+                                연말연시 떠나는 맛있는 여행<br />
+                                2024.11.13 - 2025.02.28
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/promo04.jpg"
+                                alt="눈이 덮인 나뭇" /></a
+                        ><br />
+                        <a href="#">
+                            <h3>제주 롱스테이케이션</h3>
+                            <p>
+                                겨울 맞이 추가 10% 할인<br />
+                                '얼리윈터 프로모션'<br />
+                                2024.11.01 - 2025.1.30<br />
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/promo05.jpg"
+                                alt="웃으며 팔을 펼치고 있는 여자" /></a
+                        ><br />
+                        <a href="#">
+                            <h3>
+                                [코리아세일페스타]<br />
+                                원더스테이 ONE 더 STAY
+                            </h3>
+                            <p>
+                                2박, 3박 내맘대로 골라 즐겨보세요<br />
+                                2024.11.09 - 2025.01.23
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="img/promo06.jpg" alt="여수 밤바다" /></a
+                        ><br />
+                        <a href="#">
+                            <h3>여수 천 원 FLEX</h3>
+                            <p>
+                                여수 벨메르 회원권 출시 기념 특별 선물<br />
+                                2024.10.14 - 2024.12.30
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="page02">
+                <div class="p2_bg"></div>
+                <ul class="event_box">
+                    <li>
+                        <a href="#">
+                            <img src="img/event02.jpg" alt="설악 워터피아" />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">설악 워터피아 100명 뽑아요</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="event_txt">
+                            <h2>Event</h2>
+                            <p>
+                                여행에 여유와 가치를 더한<br />
+                                효율적인 패키지 여행을 만나보세요!
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/event01.jpg" alt="감귤 따기 체험" />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">[제주] 제주 감귤 따기 체험</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/event03.jpg" alt="발망 스킨케어" />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">BALMAIN AMENITY</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src="img/event04.jpg"
+                                alt="와인잔으로 건배하는 사람들"
+                            />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">[제주] 식음업장 연말이벤트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/event05.jpg" alt="골프하는 사람" />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">[제주] 12월 골프패키지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/event06.jpg" alt="경주소요원" />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">
+                                경주 소요원<br />
+                                2024 굿디자인 어워드 수상
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src="img/event07.jpg"
+                                alt="볼풀장에서 노는 아이"
+                            />
+                            <div class="event_bg"></div>
+                            <p class="e_txt">[용인 베잔송] 관광지 제휴 할인</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="page03">
+                <div class="slideWrap">
+                    <ul class="slide">
+                        <li>
+                            <a href="#">
+                                <img src="img/event08.jpg" alt="다이닝이벤트" />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img src="img/event09.jpg" alt="잔망루피룸" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/event10.jpg" alt="럭키포인트" />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img
+                                    src="img/event11.jpg"
+                                    alt="멍패커 강아지"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    src="img/event12.jpg"
+                                    alt="리조트 할인률"
+                                />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img src="img/event13.jpg" alt="다이닝이벤트" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/event14.jpg" alt="잔망루피룸" />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img src="img/event15.jpg" alt="럭키포인트" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/event08.jpg" alt="다이닝이벤트" />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img src="img/event09.jpg" alt="잔망루피룸" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/event10.jpg" alt="럭키포인트" />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img
+                                    src="img/event11.jpg"
+                                    alt="멍패커 강아지"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img
+                                    src="img/event12.jpg"
+                                    alt="리조트 할인률"
+                                />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img src="img/event13.jpg" alt="다이닝이벤트" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/event14.jpg" alt="잔망루피룸" />
+                            </a>
+                        </li>
+                        <li class="dwn">
+                            <a href="#">
+                                <img src="img/event15.jpg" alt="럭키포인트" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="top_butt">
+                <a href="#">
+                    <img src="img/top_butt.svg" alt="다이아몬드 모양의 버튼" />
+                    <span>TOP</span>
+                </a>
+            </div>
+            <ul class="f_txt">
+                <li>
+                    <p class="sns_txt">SNS</p>
+                    <ul class="sns">
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-whatsapp"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-regular fa-comment"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <p>
+                        Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.
+                    </p>
+                </li>
+                <li>
+                    <a href="index.html"
+                        ><img
+                            class="f_logo"
+                            src="img/footer_logo.webp"
+                            alt="한화리조트 로고"
+                    /></a>
+                    <p class="cs_center">고객센터 1588-2299</p>
+                    <p class="f_contact">
+                        한화호텔앤드리조트(주) 서울특별시 중구 소공로 119, 6~8층
+                        (우) 04525
+                    </p>
+                    <p class="f_contact">
+                        사업자등록번호 : 101-81-30747 (대표자 : 김형조)
+                    </p>
+                    <p class="f_contact">
+                        통신판매업 신고번호 : 2024-서울중구-0776
+                    </p>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+        </script>
+        <script src="js/special_offer.js"></script>
+        <script src="js/special_offer_gsap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 87.932 90.696" style="enable-background:new 0 0 87.932 90.696;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6992A8;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:#6992A8;stroke:#FFFFFF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#6992A8;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M56.324,77.083H24.038c-6.6,0-12-5.4-12-12v-41.76c0-6.6,5.4-12,12-12h32.286c6.6,0,12,5.4,12,12v41.76
+			C68.324,71.683,62.924,77.083,56.324,77.083z"/>
+		<line class="st1" x1="21.512" y1="29.713" x2="40.181" y2="29.713"/>
+		<line class="st1" x1="21.512" y1="45.039" x2="58.85" y2="45.039"/>
+		<line class="st1" x1="21.512" y1="60.364" x2="58.85" y2="60.364"/>
+	</g>
+	<path class="st2" d="M54.391,50.333V34.729l13.932,9.474l12.26,27.864c0,0-2.786,12.26-12.26,5.016L54.391,50.333z"/>
+	<line class="st2" x1="54.391" y1="50.333" x2="68.324" y2="44.203"/>
+</g>
+<g>
+	<path class="st2" d="M203.728,139.244h-44.926c-6.6,0-12-5.4-12-12v-24.548c0-6.6,5.4-12,12-12h44.926c6.6,0,12,5.4,12,12v24.548
+		C215.728,133.844,210.328,139.244,203.728,139.244z"/>
+	<path class="st3" d="M149.476,95.174l25.795,26.089c0,0,5.994,4.795,11.687,0l26.099-26.089"/>
+</g>
+<g>
+	<g>
+		<path class="st0" d="M191.088,14.184h-32.286c-6.6,0-12-5.4-12-12v-41.76c0-6.6,5.4-12,12-12h32.286c6.6,0,12,5.4,12,12v41.76
+			C203.088,8.784,197.688,14.184,191.088,14.184z"/>
+		<line class="st1" x1="156.276" y1="-33.185" x2="174.945" y2="-33.185"/>
+		<line class="st1" x1="156.276" y1="-17.86" x2="193.614" y2="-17.86"/>
+		<line class="st1" x1="156.276" y1="-2.534" x2="193.614" y2="-2.534"/>
+	</g>
+	<circle class="st2" cx="203.088" cy="-17.86" r="17.49"/>
+	<polyline class="st3" points="193.091,-17.86 200.311,-9.956 210.307,-25.281 	"/>
+</g>
+<g>
+	<path class="st2" d="M154.609,6.296v45.459c0,0,0,5.985,4.972,6.642h53.982c0,0,6.393,1.171,9.234-6.642V21.212
+		c0,0-2.083-4.847-7.103-5.169h-26.991l-6.393-9.748H154.609z"/>
+	<path class="st2" d="M142.738,18.957v45.459c0,0,0,5.985,4.972,6.642h53.982c0,0,6.393,1.171,9.234-6.642V33.873
+		c0,0-2.083-4.847-7.103-5.169h-26.991l-6.393-9.748H142.738z"/>
+</g>
+</svg>

@@ -59,10 +59,14 @@
         url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.ttf)
             format("truetype");
 }
+html {
+    overflow-x: hidden;
+}
 /* body */
 body {
     position: relative;
     overflow-x: hidden;
+    word-break: keep-all;
 }
 /* ==================================================================== */
 
@@ -75,12 +79,15 @@ body {
         font-size: 20px;
         box-sizing: border-box;
         padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
         position: fixed;
         top: 0px;
         left: 0px;
         z-index: 10;
     }
     .menu_wrap {
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -103,13 +110,9 @@ body {
         width: 100%;
         height: 100%;
     }
-    .logo,
     .logo_colo {
         width: 100%;
         height: 100%;
-    }
-    .logo_colo {
-        display: none;
     }
     .main_menu {
         display: none;
@@ -123,7 +126,7 @@ body {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        border: 1px solid #fff;
+        border: 1px solid #222;
         box-sizing: border-box;
         margin-right: 20px;
         position: relative;
@@ -215,7 +218,7 @@ body {
     .bar {
         width: 25px;
         height: 2px;
-        background-color: #fff;
+        background-color: #222;
         transition: 0.5s;
         position: absolute;
     }
@@ -245,229 +248,238 @@ body {
     .on-m {
         opacity: 0;
     }
-    /* 스크롤시 헤더색 바뀌는 class */
-    .colo_on {
-        background-color: #fff;
-    }
-    .colo_on a {
-        color: #222;
-    }
-    .colo_on .reserv a {
-        border-color: #222;
-    }
-    /* visual */
-    #visual {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-        box-sizing: border-box;
-    }
-    video {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    .v_txt {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #fff;
-        position: absolute;
-        right: 60px;
-        bottom: 0px;
-        display: none;
-    }
     /* container */
     #container {
-        width: 100vw;
+        width: 100%;
     }
     section {
-        width: 100vw;
-        height: 1000px;
-        position: relative;
-    }
-    .page01 {
-        height: 1700px;
-    }
-    .p1_bgbox {
-        width: 100vw;
-        height: 900px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 50%;
-        left: 0px;
-        transform: translateY(-50%);
-    }
-    .resort_park {
         width: 100%;
+        height: 1200px;
         font-family: "MaruBuri";
-        display: flex;
-        flex-wrap: wrap;
-        gap: 70px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .resort_park li:nth-child(1) img {
-        width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .resort_park li:nth-child(2) img {
-        width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .resort_park h2 {
-        font-size: 60px;
-        color: #6992a8;
-        font-weight: lighter;
-    }
-    .resort_park li:nth-child(1) h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resort_park li:nth-child(2) {
-        text-align: center;
-    }
-    .resort_park li:nth-child(2) h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resort_park p {
-        font-size: 25px;
-        font-weight: lighter;
-    }
-    .resort_park a {
-        position: relative;
     }
 
-    /* gsap */
-    .page01 .resort_park .p1_titl1 {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .page01 .resort_park .p1_titl2 {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    .resort_park .resort_img1 {
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-    .resort_park .resort_img2 {
-        transform: translateX(500px);
-        opacity: 0;
-    }
-    .p1_txt1 {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .page01 .p1_txt2 {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    .resort_more {
-        width: 350px;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: 0.4s;
-    }
-    .resort_more span {
-        display: inline-block;
-        border: 1px solid #fff;
-        box-sizing: border-box;
-        padding: 10px 40px;
-        font-size: 20px;
-        font-weight: lighter;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    /* 리조트 그림 호버시 더보기*/
-    .opci_on {
-        opacity: 1;
-    }
-    /* page02 */
-    .page02 {
-        width: 100%;
-        height: 1500px;
-    }
-    .l_bgbox {
-        width: 400px;
-        height: 1000px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-        display: none;
-    }
-    .p2_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #405f6f;
-        text-align: center;
-        margin-top: 100px;
-        position: absolute;
-        top: 0px;
-        left: 100px;
-        z-index: 2;
-        transform: translateY(200px);
-        opacity: 0;
-    }
-    .room {
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px auto;
-        gap: 30px;
-        position: absolute;
-        top: 60%;
-        left: 800px;
-        transform: translateY(-50%);
-    }
-    .room li {
-        width: 100%;
-        height: 100%;
-    }
-    .room img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-    .p2_txt {
-        font-family: "MaruBuri";
-        text-align: center;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        opacity: 0;
-        z-index: 2;
-    }
-    .p2_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
+    /* 예약하기 버튼 */
     .more_box {
         width: 140px;
         height: 40px;
         line-height: 40px;
         font-family: "MaruBuri";
         font-size: 17px;
-        margin-top: 30px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    /* title 제목 */
+    .t_titl {
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 50px;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 20%;
+        height: 3px;
+        background-color: #6992a8;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .t_down {
+        width: 80%;
+        height: 3px;
+        background-color: #6992a8;
+        margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .t_txt {
+        width: 80%;
+        line-height: 30px;
+        font-size: 17px;
+        font-family: "MaruBuri";
+        margin: 50px auto;
+        text-align: center;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    /* page01 */
+    .page01 {
+        height: 1100px;
+        margin-top: 100px;
+        box-sizing: border-box;
+        padding-top: 260px;
+        background-color: #f1ece1;
+        position: relative;
+    }
+    .page01 h2 {
+        font-size: 20px;
+        color: #405f6f;
+        line-height: 30px;
+        position: absolute;
+        top: -140px;
+        left: 50px;
+    }
+    .photos {
+        display: flex;
+        justify-content: center;
+    }
+    .photos > li > img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .photos > li:nth-child(1) {
+        transform: translateX(0%);
+    }
+    .photos > li:nth-child(2) {
+        position: absolute;
+        bottom: 100px;
+        right: -170px;
+    }
+    .photos > li:nth-child(2) > img {
+        width: 80%;
+        object-fit: cover;
+    }
+    .park {
+        transform: translateX(-900px) rotate(-45deg);
+        opacity: 0;
+    }
+    .picnic {
+        transform: translateX(900px) rotate(50deg);
+        opacity: 0;
+    }
+    .txtslid1 {
+        display: inline-block;
+        transform: translateY(-100px) rotate(10deg);
+        opacity: 0;
+    }
+    .txtslid2 {
+        display: inline-block;
+        transform: translateY(-100px) rotate(10deg);
+        opacity: 0;
+    }
+    /* page02 */
+    .page02 {
+        height: 1400px;
+        position: relative;
+    }
+    .p2_txt {
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 75px;
+    }
+    .p2_txt > h2 {
+        font-size: 20px;
+        color: #405f6f;
+        margin-bottom: 40px;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    .p2_txt > a {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    .p2_bg {
+        width: 100%;
+        height: 800px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 60%;
+        left: 0px;
+        transform: translateY(-50%);
+    }
+    .puppy {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .puppy > li {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .puppy h2 {
+        font-size: 25px;
+        color: #405f6f;
+        margin-bottom: 20px;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .puppy p {
+        font-size: 18px;
+        line-height: 32px;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .puppy img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .sleepPet {
+        transform: translateX(-700px);
+        opacity: 0;
+    }
+    .lookupPet {
+        transform: translateX(700px);
+        opacity: 0;
+    }
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
         box-sizing: border-box;
         border: 1px solid #222;
         position: relative;
@@ -482,174 +494,92 @@ body {
     }
     /* page03 */
     .page03 {
-        height: 1000px;
-    }
-    .r_bgbox {
-        width: 400px;
-        height: 1000px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1;
-        display: none;
-    }
-    .p3_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 50px;
-        color: #6992a8;
-        text-align: center;
-        position: absolute;
-        top: 60px;
-        left: -1000px;
-        transform: translateX(-80px);
-        opacity: 0;
         margin-top: 50px;
-        z-index: 2;
-    }
-    .p3_txt {
-        text-align: center;
-        font-family: "MaruBuri";
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(50%);
-        opacity: 0;
-        z-index: 2;
-    }
-    .p3_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
-    .p3_img {
-        width: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: -2000px;
-        opacity: 0;
-        transform: translateY(-50%);
-    }
-    /* page04 */
-    .page04 {
-        height: 1400px;
-    }
-    .l_bgbox {
-        width: 400px;
-        height: 1000px;
         background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-        display: none;
-    }
-    .p4_txtwrap {
-        width: 80%;
-        margin: 0px auto;
-    }
-    .p4_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #405f6f;
-        margin-top: 100px;
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .p4_txt {
-        font-family: "MaruBuri";
-        margin-top: 50px;
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .p4_txt p {
-        font-size: 17px;
-        line-height: 30px;
-        margin-bottom: 30px;
-    }
-    .p4_txt .more_box {
-        margin: 0px;
-    }
-    .p4_imag {
-        width: 80%;
-        margin: 150px 0px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        margin: 150px auto;
-        justify-content: center;
-    }
-    .p4_imag img {
-        width: 100%;
-        object-fit: cover;
-    }
-    .p4_img1,
-    .p4_img2 {
-        width: 100%;
-        transform: translateY(300%) rotate(50deg);
-    }
-    /* banner */
-    .reservation {
-        width: 100vw;
         box-sizing: border-box;
-        padding: 50px;
-        margin-bottom: 100px;
-        margin-top: 50px;
-    }
-    .reservation a {
-        width: 100%;
-        height: 500px;
+        padding-top: 50px;
         position: relative;
     }
-    .imgBox {
+    .service {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        background-color: #a0c4d7;
-        z-index: 4;
-        transform: translateY(0%);
-    }
-    .r_bg {
-        width: 100%;
-        height: 100%;
-        background-image: url(../img/hotel06.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .r_txt {
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         flex-wrap: wrap;
-        position: absolute;
-        align-items: center;
         justify-content: center;
-        box-sizing: border-box;
-        padding: 0px 30px;
+        gap: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .service img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .service > li {
+        position: relative;
+        overflow: hidden;
+    }
+    .service > li:nth-child(3) > img {
+        height: 286px;
+    }
+    .service > li:nth-child(3) {
+        width: 100%;
+        height: 286px;
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    .service > li:nth-child(1) {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    .service > li:nth-child(2) {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    .p3_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
         top: 0px;
         left: 0px;
-        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translateY(-100%);
     }
-    .r_txt p {
+    .service > li:nth-child(2) .p3_bg {
+        transform: translateX(200px);
+    }
+    .service > li:nth-child(3) .p3_bg {
+        transform: translateY(200px);
+    }
+    .txt_wrap {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+    .txt_wrap3 {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        color: #fff;
+    }
+    .txt_wrap h3,
+    .txt_wrap3 h3 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .txt_wrap p,
+    .txt_wrap3 p {
+        font-size: 18px;
         line-height: 30px;
-        letter-spacing: 1px;
-        font-family: "MaruBuri";
-        font-size: 16px;
     }
-    .reserv_go {
-        font-family: "Noto Serif Display", serif;
-        font-size: 25px;
-        font-weight: 900;
-    }
-    .reserv_go span:nth-child(2) {
-        margin-left: 10px;
-    }
-
     /* footer */
     footer {
         width: 100vw;
@@ -736,6 +666,8 @@ body {
         font-size: 20px;
         box-sizing: border-box;
         padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
         position: fixed;
         top: 0px;
         left: 0px;
@@ -754,7 +686,7 @@ body {
         width: 40%;
     }
     header a {
-        color: #fff;
+        color: #222;
     }
     header h1 {
         width: 300px;
@@ -764,13 +696,9 @@ body {
         width: 100%;
         height: 100%;
     }
-    .logo,
     .logo_colo {
         width: 100%;
         height: 100%;
-    }
-    .logo_colo {
-        display: none;
     }
     .main_menu {
         display: none;
@@ -783,7 +711,7 @@ body {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        border: 1px solid #fff;
+        border: 1px solid #222;
         box-sizing: border-box;
         margin-right: 20px;
         position: relative;
@@ -875,7 +803,7 @@ body {
     .bar {
         width: 25px;
         height: 2px;
-        background-color: #fff;
+        background-color: #222;
         transition: 0.5s;
         position: absolute;
     }
@@ -909,215 +837,236 @@ body {
     .bar_on {
         background-color: #a0c4d7;
     }
-    /* 스크롤시 헤더색 바뀌는 class */
-    .colo_on {
-        background-color: #fff;
-    }
-    .colo_on a {
-        color: #222;
-    }
-    .colo_on .reserv a {
-        border-color: #222;
-    }
-    /* visual */
-    #visual {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-        box-sizing: border-box;
-    }
-    video {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    .v_txt {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #fff;
-        position: absolute;
-        right: 60px;
-        bottom: 0px;
-    }
     /* container */
     #container {
         width: 100vw;
     }
     section {
         width: 100vw;
-        height: 1000px;
-        position: relative;
-    }
-    .p1_bgbox {
-        width: 100vw;
-        height: 560px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 50%;
-        left: 0px;
-        transform: translateY(-50%);
-    }
-    .resort_park {
-        width: 100%;
-        height: 100%;
+        height: 1200px;
         font-family: "MaruBuri";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .resort_park li:nth-child(1) img {
-        width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .resort_park li:nth-child(2) img {
-        width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .resort_park h2 {
-        font-size: 60px;
-        color: #6992a8;
-        font-weight: lighter;
-    }
-    .resort_park li:nth-child(1) h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resort_park li:nth-child(2) {
-        text-align: center;
-    }
-    .resort_park li:nth-child(2) h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resort_park p {
-        font-size: 25px;
-        font-weight: lighter;
-    }
-    .resort_park a {
-        position: relative;
     }
 
-    /* gsap */
-    .page01 .resort_park .p1_titl1 {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .page01 .resort_park .p1_titl2 {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    .resort_park .resort_img1 {
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-    .resort_park .resort_img2 {
-        transform: translateX(500px);
-        opacity: 0;
-    }
-    .p1_txt1 {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .page01 .p1_txt2 {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    .resort_more {
-        width: 350px;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: 0.4s;
-    }
-    .resort_more span {
-        display: inline-block;
-        border: 1px solid #fff;
-        box-sizing: border-box;
-        padding: 10px 40px;
-        font-size: 20px;
-        font-weight: lighter;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    /* 리조트 그림 호버시 더보기*/
-    .opci_on {
-        opacity: 1;
-    }
-    /* page02 */
-    .page02 {
-        width: 100%;
-    }
-    .l_bgbox {
-        width: 400px;
-        height: 1000px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-    }
-    .p2_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 150px;
-        color: #405f6f;
-        position: absolute;
-        top: 220px;
-        left: 160px;
-        transform: translateY(200px);
-        opacity: 0;
-        z-index: 2;
-    }
-    .room {
-        display: flex;
-        gap: 40px;
-        position: absolute;
-        top: 50%;
-        left: 800px;
-        transform: translateY(-50%);
-    }
-    .room li {
-        width: 300px;
-        height: 200px;
-    }
-    .room img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .p2_txt {
-        font-family: "MaruBuri";
-        position: absolute;
-        top: 50%;
-        left: 200px;
-        transform: translate(-50%, 50%);
-        opacity: 0;
-        z-index: 2;
-    }
-    .p2_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
+    /* 예약하기 버튼 */
     .more_box {
         width: 140px;
         height: 40px;
         line-height: 40px;
         font-family: "MaruBuri";
         font-size: 17px;
-        margin-top: 30px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    /* title 제목 */
+    .t_titl {
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 50px;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 20%;
+        height: 3px;
+        background-color: #6992a8;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .t_down {
+        width: 90%;
+        height: 3px;
+        background-color: #6992a8;
+        margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .t_txt {
+        width: 100%;
+        line-height: 25px;
+        font-size: 17px;
+        font-family: "MaruBuri";
+        text-align: right;
+        margin: 30px auto 50px;
+        box-sizing: border-box;
+        padding-right: 100px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    /* page01 */
+    .page01 {
+        height: 1100px;
+        margin-top: 100px;
+        box-sizing: border-box;
+        padding-top: 260px;
+        background-color: #f1ece1;
+        position: relative;
+    }
+    .page01 h2 {
+        font-size: 30px;
+        color: #405f6f;
+        line-height: 45px;
+        position: absolute;
+        top: -140px;
+        left: 50px;
+    }
+    .photos {
+        display: flex;
+        justify-content: center;
+    }
+    .photos > li > img {
+        width: 90%;
+        object-fit: cover;
+    }
+    .photos > li:nth-child(1) {
+        transform: translateX(0%);
+    }
+    .photos > li:nth-child(2) {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+    }
+    .photos > li:nth-child(2) > img {
+        width: 600px;
+        object-fit: cover;
+    }
+    .park {
+        transform: translateX(-900px) rotate(-45deg);
+        opacity: 0;
+    }
+    .picnic {
+        transform: translateX(900px) rotate(50deg);
+        opacity: 0;
+    }
+    .txtslid1 {
+        display: inline-block;
+        transform: translateY(-100px) rotate(10deg);
+        opacity: 0;
+    }
+    .txtslid2 {
+        display: inline-block;
+        transform: translateY(-100px) rotate(10deg);
+        opacity: 0;
+    }
+    /* page02 */
+    .page02 {
+        height: 1200px;
+        position: relative;
+    }
+    .p2_txt {
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 75px;
+    }
+    .p2_txt > h2 {
+        font-size: 30px;
+        color: #405f6f;
+        margin-bottom: 40px;
+        letter-spacing: 10px;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    .p2_txt > a {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .p2_bg {
+        width: 100%;
+        height: 900px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 25%;
+        left: 0px;
+    }
+    .puppy {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .puppy > li {
+        width: calc(100% / 3);
+    }
+    .puppy h2 {
+        font-size: 25px;
+        color: #405f6f;
+        margin-bottom: 20px;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .puppy p {
+        font-size: 18px;
+        line-height: 32px;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .puppy img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .sleepPet {
+        transform: translateX(-700px);
+        opacity: 0;
+    }
+    .lookupPet {
+        transform: translateX(700px);
+        opacity: 0;
+    }
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
         box-sizing: border-box;
         border: 1px solid #222;
         position: relative;
@@ -1131,165 +1080,91 @@ body {
         z-index: 2;
     }
     /* page03 */
-    .r_bgbox {
-        width: 400px;
-        height: 1000px;
+    .page03 {
+        margin-top: 150px;
         background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1;
-    }
-    .p3_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #6992a8;
-        position: absolute;
-        top: 60px;
-        left: -2000px;
-        opacity: 0;
-        z-index: 2;
-    }
-    .p3_txt {
-        text-align: center;
-        font-family: "MaruBuri";
-        position: absolute;
-        top: 50%;
-        right: -100px;
-        transform: translateY(50%) translateX(-50%);
-        opacity: 0;
-        z-index: 2;
-    }
-    .p3_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
-    .p3_img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: -2000px;
-        opacity: 0;
-        transform: translateY(-50%) translateX(-200px);
-    }
-    /* page04 */
-    .page04 {
-        height: 1050px;
-    }
-    .l_bgbox {
-        width: 400px;
-        height: 1050px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-    }
-    .p4_txtwrap {
-        position: absolute;
-        top: 120px;
-        right: 50px;
-        z-index: 2;
-    }
-    .p4_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #405f6f;
-        transform: translateY(300%);
-        opacity: 0;
-    }
-    .p4_txt {
-        font-family: "MaruBuri";
-        display: flex;
-        align-items: center;
-        gap: 100px;
-        margin-top: 50px;
-        transform: translateY(300%);
-        opacity: 0;
-    }
-    .p4_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
-    .p4_txt .more_box {
-        margin: 0px;
-    }
-    .p4_imag {
-        width: 100%;
-        display: flex;
-        align-items: end;
-        gap: 50px;
-        position: absolute;
-        bottom: 150px;
-        left: 0px;
-        z-index: 2;
-    }
-    .p4_img1,
-    .p4_img2 {
-        width: 100%;
-        transform: translateY(300%) rotate(50deg);
-    }
-    /* banner */
-    .reservation {
-        width: 100vw;
         box-sizing: border-box;
-        padding: 50px;
-    }
-    .reservation a {
-        width: 100%;
-        height: 500px;
+        padding-top: 150px;
         position: relative;
     }
-    .imgBox {
+    .service {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        background-color: #a0c4d7;
-        z-index: 4;
-        transform: translateY(0%);
-    }
-    .r_bg {
-        width: 100%;
-        height: 100%;
-        background-image: url(../img/hotel06.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .r_txt {
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.5);
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
         position: absolute;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        padding: 0px 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .service img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .service > li {
+        position: relative;
+        overflow: hidden;
+    }
+    .service > li:nth-child(3) > img {
+        height: 286px;
+    }
+    .service > li:nth-child(3) {
+        width: 80%;
+        height: 286px;
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    .service > li:nth-child(1) {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    .service > li:nth-child(2) {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    .p3_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
         top: 0px;
         left: 0px;
-        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translateY(-100%);
     }
-    .r_txt p {
-        line-height: 32px;
-        letter-spacing: 1px;
-        font-family: "MaruBuri";
-        font-size: 20px;
+    .service > li:nth-child(2) .p3_bg {
+        transform: translateX(200px);
     }
-    .reserv_go {
-        font-family: "Noto Serif Display", serif;
+    .service > li:nth-child(3) .p3_bg {
+        transform: translateY(200px);
+    }
+    .txt_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+    .txt_wrap3 {
+        text-align: right;
+        position: absolute;
+        top: 50%;
+        right: 80px;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .txt_wrap h3,
+    .txt_wrap3 h3 {
         font-size: 25px;
-        font-weight: 900;
+        margin-bottom: 25px;
     }
-    .reserv_go span:nth-child(2) {
-        margin-left: 10px;
+    .txt_wrap p,
+    .txt_wrap3 p {
+        font-size: 18px;
+        line-height: 30px;
     }
-
     /* footer */
     footer {
         width: 100vw;
@@ -1375,6 +1250,8 @@ body {
         font-size: 20px;
         box-sizing: border-box;
         padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0px 3px 10px #999;
         position: fixed;
         top: 0px;
         left: 0px;
@@ -1393,7 +1270,7 @@ body {
         width: 40%;
     }
     header a {
-        color: #fff;
+        color: #222;
     }
     header h1 {
         width: 300px;
@@ -1403,13 +1280,9 @@ body {
         width: 100%;
         height: 100%;
     }
-    .logo,
     .logo_colo {
         width: 100%;
         height: 100%;
-    }
-    .logo_colo {
-        display: none;
     }
     .main_menu {
         display: flex;
@@ -1425,7 +1298,7 @@ body {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        border: 1px solid #fff;
+        border: 1px solid #222;
         box-sizing: border-box;
         margin-right: 20px;
         position: relative;
@@ -1441,7 +1314,7 @@ body {
     .under_bar {
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: #222;
         margin-top: 4px;
         transform: scale(0);
         transition: 0.3s;
@@ -1469,214 +1342,231 @@ body {
     .side_menu {
         display: none;
     }
-    /* 스크롤시 헤더색 바뀌는 class */
-    .colo_on {
-        background-color: #fff;
-    }
-    .colo_on a {
-        color: #222;
-    }
-    .colo_on .reserv a {
-        border-color: #222;
-    }
-    /* visual */
-    #visual {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-        box-sizing: border-box;
-    }
-    video {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    .v_txt {
-        font-family: "Noto Serif Display", serif;
-        font-size: 250px;
-        color: #fff;
-        position: absolute;
-        right: 60px;
-        bottom: -30px;
-    }
     /* container */
     #container {
-        width: 100vw;
+        width: 100%;
     }
     section {
-        width: 100vw;
-        height: 1000px;
-        position: relative;
-    }
-    .p1_bgbox {
-        width: 100vw;
-        height: 560px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 50%;
-        left: 0px;
-        transform: translateY(-50%);
-    }
-    .resort_park {
         width: 100%;
-        height: 100%;
+        height: 1200px;
         font-family: "MaruBuri";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
-    .resort_park li:nth-child(1) img {
-        width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .resort_park li:nth-child(2) img {
-        width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .resort_park h2 {
-        font-size: 80px;
-        color: #6992a8;
-        font-weight: lighter;
-    }
-    .resort_park li:nth-child(1) h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resort_park li:nth-child(2) {
-        text-align: center;
-    }
-    .resort_park li:nth-child(2) h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .resort_park p {
-        font-size: 25px;
-        font-weight: lighter;
-    }
-    .resort_park a {
-        position: relative;
-    }
-    /* gsap */
-    .page01 .resort_park .p1_titl1 {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .page01 .resort_park .p1_titl2 {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    .resort_park .resort_img1 {
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-    .resort_park .resort_img2 {
-        transform: translateX(500px);
-        opacity: 0;
-    }
-    .p1_txt1 {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .page01 .p1_txt2 {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    .resort_more {
-        width: 350px;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: 0.4s;
-    }
-    .resort_more span {
-        display: inline-block;
-        border: 1px solid #fff;
-        box-sizing: border-box;
-        padding: 10px 40px;
-        font-size: 20px;
-        font-weight: lighter;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    /* 리조트 그림 호버시 더보기*/
-    .opci_on {
-        opacity: 1;
-    }
-    /* page02 */
-    .page02 {
-        overflow: hidden;
-    }
-    .l_bgbox {
-        width: 400px;
-        height: 1000px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-    }
-    .p2_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 150px;
-        color: #405f6f;
-        position: absolute;
-        top: 220px;
-        left: 160px;
-        z-index: 2;
-        transform: translateY(200px);
-        opacity: 0;
-    }
-    .room {
-        display: flex;
-        gap: 40px;
-        position: absolute;
-        top: 50%;
-        left: 2000px;
-        transform: translateY(-50%);
-    }
-    .room li {
-        width: 440px;
-        height: 300px;
-    }
-    .room img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .p2_txt {
-        font-family: "MaruBuri";
-        position: absolute;
-        top: 50%;
-        left: 200px;
-        transform: translate(-50%, 50%);
-        opacity: 0;
-        z-index: 2;
-    }
-    .p2_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
+
+    /* 예약하기 버튼 */
     .more_box {
         width: 140px;
         height: 40px;
         line-height: 40px;
         font-family: "MaruBuri";
         font-size: 17px;
-        margin-top: 30px;
+        box-sizing: border-box;
+        border: 1px solid #222;
+        position: relative;
+        overflow: hidden;
+    }
+    .more_box > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* title 제목 */
+    .t_titl {
+        width: 1500px;
+        margin: 0px auto;
+        margin-top: 120px;
+        font-family: "Noto Serif Display", serif;
+        font-weight: 900;
+        font-size: 80px;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    .colo_light {
+        color: #6992a8;
+    }
+    .colo_dark {
+        color: #405f6f;
+    }
+    .t_up {
+        width: 60%;
+        height: 3px;
+        background-color: #6992a8;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        box-sizing: border-box;
+    }
+    .t_down {
+        width: 1500px;
+        height: 3px;
+        background-color: #6992a8;
+        margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    .t_txt {
+        width: 1500px;
+        line-height: 30px;
+        font-size: 18px;
+        font-family: "MaruBuri";
+        text-align: right;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+        padding-right: 30px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    /* page01 */
+    .page01 {
+        height: 1100px;
+        margin-top: 100px;
+        box-sizing: border-box;
+        padding-top: 260px;
+        background-color: #f1ece1;
+        position: relative;
+    }
+    .page01 h2 {
+        font-size: 30px;
+        color: #405f6f;
+        line-height: 45px;
+        position: absolute;
+        top: -140px;
+        left: 50px;
+    }
+    .photos {
+        display: flex;
+        justify-content: center;
+    }
+    .photos > li:nth-child(1) {
+        transform: translateX(-20%);
+    }
+    .photos > li:nth-child(2) {
+        position: absolute;
+        bottom: 170px;
+        right: 300px;
+    }
+    .photos > li:nth-child(2) > img {
+        width: 600px;
+        object-fit: cover;
+    }
+    .park {
+        transform: translateX(-900px) rotate(-45deg);
+        opacity: 0;
+    }
+    .picnic {
+        transform: translateX(900px) rotate(50deg);
+        opacity: 0;
+    }
+    .txtslid1 {
+        display: inline-block;
+        transform: translateY(-100px) rotate(10deg);
+        opacity: 0;
+    }
+    .txtslid2 {
+        display: inline-block;
+        transform: translateY(-100px) rotate(10deg);
+        opacity: 0;
+    }
+    /* page02 */
+    .page02 {
+        height: 1200px;
+        position: relative;
+    }
+    .p2_txt {
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 75px;
+    }
+    .p2_txt > h2 {
+        font-size: 50px;
+        color: #405f6f;
+        margin-bottom: 40px;
+        letter-spacing: 30px;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    .p2_txt > a {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .p2_bg {
+        width: 100%;
+        height: 900px;
+        background-color: #f1ece1;
+        position: absolute;
+        top: 25%;
+        left: 0px;
+    }
+    .puppy {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .puppy h2 {
+        font-size: 30px;
+        color: #405f6f;
+        margin-bottom: 30px;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .puppy p {
+        font-size: 19px;
+        line-height: 32px;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    .puppy img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .sleepPet {
+        transform: translateX(-700px);
+        opacity: 0;
+    }
+    .lookupPet {
+        transform: translateX(700px);
+        opacity: 0;
+    }
+    /* 예약하기 버튼 */
+    .more_box {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-family: "MaruBuri";
+        font-size: 17px;
         box-sizing: border-box;
         border: 1px solid #222;
         position: relative;
@@ -1690,161 +1580,91 @@ body {
         z-index: 2;
     }
     /* page03 */
-    .r_bgbox {
-        width: 400px;
-        height: 1000px;
+    .page03 {
+        margin-top: 150px;
         background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1;
-    }
-    .p3_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 200px;
-        color: #6992a8;
-        position: absolute;
-        top: 60px;
-        left: -2000px;
-        opacity: 0;
-        z-index: 2;
-    }
-    .p3_txt {
-        text-align: center;
-        font-family: "MaruBuri";
-        position: absolute;
-        top: 50%;
-        right: -110px;
-        transform: translateY(50%) translateX(-50%);
-        opacity: 0;
-        z-index: 2;
-    }
-    .p3_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
-    .p3_img {
-        width: 1600px;
-        height: 500px;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: -2000px;
-        opacity: 0;
-        transform: translateY(-50%);
-    }
-    /* page04 */
-    .l_bgbox {
-        width: 400px;
-        height: 1000px;
-        background-color: #f1ece1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-    }
-    .p4_txtwrap {
-        position: absolute;
-        top: 120px;
-        right: 150px;
-        z-index: 2;
-    }
-    .p4_title {
-        font-family: "Noto Serif Display", serif;
-        font-size: 100px;
-        color: #405f6f;
-        transform: translateY(300%);
-        opacity: 0;
-    }
-    .p4_txt {
-        font-family: "MaruBuri";
-        display: flex;
-        align-items: center;
-        gap: 100px;
-        margin-top: 50px;
-        transform: translateY(300%);
-        opacity: 0;
-    }
-    .p4_txt p {
-        font-size: 17px;
-        line-height: 30px;
-    }
-    .p4_txt .more_box {
-        margin: 0px;
-    }
-    .p4_imag {
-        display: flex;
-        align-items: end;
-        gap: 50px;
-        position: absolute;
-        bottom: 50px;
-        left: 150px;
-        z-index: 2;
-    }
-    .p4_img1,
-    .p4_img2 {
-        transform: translateY(300%) rotate(50deg);
-    }
-    /* banner */
-    .reservation {
-        width: 100vw;
         box-sizing: border-box;
-        padding: 50px;
+        padding-top: 150px;
+        position: relative;
     }
-    .reservation a {
+    .service {
+        width: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .service img {
         width: 100%;
-        height: 500px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .service > li {
         position: relative;
         overflow: hidden;
     }
-    .imgBox {
+    .service > li:nth-child(3) > img {
+        height: 286px;
+    }
+    .service > li:nth-child(3) {
+        width: 1310px;
+        height: 286px;
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    .service > li:nth-child(1) {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    .service > li:nth-child(2) {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    .p3_bg {
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0px;
         left: 0px;
-        background-color: #a0c4d7;
-        z-index: 4;
-        transform: translateY(0%);
-    }
-    .r_bg {
-        width: 100%;
-        height: 100%;
-        background-image: url(../img/hotel06.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .r_txt {
-        width: 100%;
-        height: 100%;
-        color: #fff;
         background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
+        transform: translateY(-100%);
+    }
+    .service > li:nth-child(2) .p3_bg {
+        transform: translateX(200px);
+    }
+    .service > li:nth-child(3) .p3_bg {
+        transform: translateY(200px);
+    }
+    .txt_wrap {
         position: absolute;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-        padding: 0px 50px;
-        top: 0px;
-        left: 0px;
-        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
     }
-    .r_txt p {
-        line-height: 60px;
-        letter-spacing: 1px;
-        font-family: "MaruBuri";
-        font-size: 35px;
+    .txt_wrap3 {
+        text-align: right;
+        position: absolute;
+        top: 50%;
+        right: 80px;
+        transform: translateY(-50%);
+        color: #fff;
     }
-    .reserv_go {
-        font-family: "Noto Serif Display", serif;
-        font-size: 50px;
-        font-weight: 900;
+    .txt_wrap h3,
+    .txt_wrap3 h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
     }
-    .reserv_go span:nth-child(2) {
-        margin-left: 25px;
+    .txt_wrap p,
+    .txt_wrap3 p {
+        font-size: 18px;
+        line-height: 30px;
     }
-
     /* footer */
     footer {
         width: 100vw;
