@@ -574,9 +574,8 @@ body {
         transition: 1s;
         transform: translateY(50px);
     }
-    }
-     /* addClass */
-     .resort_txt .showup {
+    /* addClass */
+    .resort_txt .showup {
         opacity: 1;
         transform: translateY(0px);
     }
