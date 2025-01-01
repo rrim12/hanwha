@@ -287,6 +287,14 @@ body {
         font-size: 50px;
         position: relative;
         box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
     }
     .colo_light {
         color: #6992a8;
@@ -310,15 +318,31 @@ body {
         height: 3px;
         background-color: #6992a8;
         margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
     }
     .t_txt {
-        width: 80%;
+        width: 70%;
         line-height: 30px;
         font-size: 17px;
         font-family: "MaruBuri";
         margin: 50px auto;
         text-align: center;
         box-sizing: border-box;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
     }
     /* page01 */
     .page01 {
@@ -973,7 +997,16 @@ body {
         font-size: 50px;
         position: relative;
         box-sizing: border-box;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: 1s;
     }
+    /* 타이틀 제목 add class */
+    .come_in {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
     .colo_light {
         color: #6992a8;
     }
@@ -996,6 +1029,14 @@ body {
         height: 3px;
         background-color: #6992a8;
         margin: 0px auto;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    /* 제이쿼리 들어오는 타이틀 아래선 */
+    .Rcome_in {
+        opacity: 1;
+        transform: translateX(0px);
     }
     .t_txt {
         width: 100%;
@@ -1004,9 +1045,16 @@ body {
         font-family: "MaruBuri";
         text-align: right;
         margin: 30px auto 50px;
-
         box-sizing: border-box;
         padding-right: 100px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+    /* 타이틀 제목 add class */
+    .come_up {
+        opacity: 1;
+        transform: translateY(0px);
     }
     /* page01 */
     .page01 {
